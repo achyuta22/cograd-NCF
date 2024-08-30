@@ -5,7 +5,7 @@ import Culture from "./opening/Culture";
 import HistoryPage from "./opening/History";
 import Hero from "./opening/Hero";
 import Navbar from "./opening/Navbar";
-import Approach from "./opening/Approach";
+// import Approach from "./opening/Approach";
 function App() {
   return (
     <Router>
@@ -15,7 +15,7 @@ function App() {
         <Route path="/culture" element={<Culture />} />
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/" element={<Hero />} />
-        <Route path="/approach" element={<Approach />} />
+        {/* <Route path="/approach" element={<Approach />} /> */}
 
       </Routes>
     </Router>
