@@ -47,7 +47,7 @@ const HistoryPage = () => {
             {/* Part A: Approach */}
             <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
               <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-                PART A: Approach
+                Approach
               </h2>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>Aims and Curricular Areas of School Education</li>
@@ -63,7 +63,7 @@ const HistoryPage = () => {
             {/* Part B: Cross-Cutting Themes */}
             <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
               <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-                PART B: Cross-Cutting Themes
+              Cross-Cutting Themes
               </h2>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>Rootedness in India and Indian Knowledge Systems</li>
@@ -82,7 +82,7 @@ const HistoryPage = () => {
           {/* Part C: School Subjects */}
           <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
             <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-              PART C: School Subjects
+              School Subjects
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               <li>Learning in the Foundational Stage</li>
@@ -101,7 +101,7 @@ const HistoryPage = () => {
           {/* Part D: School Culture and Processes */}
           <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
             <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-              PART D: School Culture and Processes
+               School Culture and Processes
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               <li>School Culture</li>
@@ -112,7 +112,7 @@ const HistoryPage = () => {
           {/* Part E: Creating a Supportive Ecosystem */}
           <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
             <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-              PART E: Creating a Supportive Ecosystem
+               Creating a Supportive Ecosystem
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               <li>Capacity Building for Implementation</li>
