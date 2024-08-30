@@ -79,12 +79,6 @@ const Approach1 = () => {
               prosperous, just, culturally vibrant, and democratic knowledge
               society.
             </p>
-            <p className="mb-4 text-gray-800 text-lg leading-relaxed">
-              The five Aims of Education as articulated in the previous section
-              would be achieved by schools by developing relevant and
-              appropriate knowledge, capacities, values, and dispositions in
-              their students.
-            </p>
           </div>
           <div className="lg:col-span-5 flex justify-center">
             <img
@@ -96,6 +90,14 @@ const Approach1 = () => {
         </div>
 
         {/* Three Square Boxes Section */}
+        <div className="text-center mt-16">
+          <p className="mb-8 text-gray-800 text-lg leading-relaxed mx-auto max-w-3xl">
+            The five Aims of Education as articulated in the previous section
+            would be achieved by schools by developing relevant and appropriate
+            knowledge, capacities, values, and dispositions in their students.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <div className="bg-gradient-to-br from-blue-50 via-white to-blue-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-w-1 aspect-h-1 flex flex-col items-center justify-center">
             <h3 className="text-3xl font-semibold mb-2 text-blue-900">
