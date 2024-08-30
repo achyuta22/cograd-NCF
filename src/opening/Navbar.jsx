@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,10 +38,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/approach"
-                className="block text-lg font-medium text-white hover:text-purple-300 transition-colors duration-300"
-                onClick={toggleMenu}
+                className="hover:text-white transition-colors duration-300 text-lg font-medium relative group"
               >
                 Approach
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
             <li>
@@ -69,11 +68,7 @@ const Navbar = () => {
           onClick={toggleMenu}
           className="md:hidden p-2 rounded-md text-white hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
         >
-          {isOpen ? (
-            <FaTimes className="h-6 w-6 transition-transform duration-300 transform rotate-90" />
-          ) : (
-            <FaBars className="h-6 w-6 transition-transform duration-300 transform rotate-0" />
-          )}
+          {isOpen ? "Close" : "Menu"}
         </button>
       </div>
       <div
