@@ -5,39 +5,45 @@ import culture3 from "../images/culture3.png";
 
 const Culture = () => {
   return (
-    <div className="p-8 bg-gradient-to-r from-gray-100 to-gray-200">
-      {/* Main Banner Section */}
-      <div className="relative w-full h-96 mb-12 bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 rounded-3xl shadow-xl border border-gray-300 overflow-hidden">
+    <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 bg-yellow-50">
+      <div className="mr-auto place-self-center lg:col-span-7">
+        <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-pink-600">
+          Cross Cutting Themes
+        </h1>
+        <p className="max-w-2xl mb-6 font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl text-blue-700">
+          The NCF 2023 focuses on the all-round development of students,
+          emphasizing not just academic learning but also life skills, emotional
+          well-being, and values like empathy, ethics, and teamwork.
+        </p>
+      </div>
+      <div className="hidden lg:mt-0 lg:col-span-5 lg:flex flex-col items-center">
         <img
           src={culture1}
-          alt="Cross Cutting Themes Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-50"
+          alt="mockup"
+          className="w-full h-auto lg:max-w-md rounded-lg shadow-md border-4 border-green-300"
         />
-        <div className="relative z-10 flex items-center justify-center h-full p-8">
-          <h1 className="text-4xl font-bold text-white md:text-5xl xl:text-6xl leading-tight tracking-tight text-center">
-            Cross Cutting Themes
-          </h1>
-        </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-stretch gap-0">
+      {/* Full-width container for the images */}
+      <div className="w-full flex flex-col md:flex-row items-stretch gap-4 mt-8 lg:mt-12 lg:col-span-12">
         {/* Image 1 */}
-        <div className="flex-1 relative bg-white border-gray-300 overflow-hidden">
+        <div className="flex-1 relative bg-white border-4 border-yellow-400 rounded-lg shadow-lg  duration-300">
           <img
             src={culture2}
             alt="Culture Image 2"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
 
         {/* Image 2 */}
-        <div className="flex-1 relative bg-white overflow-hidden">
+        <div className="flex-1 relative bg-white border-4 border-blue-300 rounded-lg shadow-lg  duration-300">
           <img
             src={culture3}
             alt="Culture Image 3"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
       </div>
+     
     </div>
   );
 };
