@@ -1,17 +1,19 @@
 import React from "react";
 import noncore from "../images/noncore.png"; // Update the path according to your file structure
+import noncore2 from "../images/noncore2.jpg"; // Replace with your actual image path
+import noncore3 from "../images/noncore3.jpg"; // Replace with your actual image path
 
 const Curricular = () => {
   return (
-    <section className="bg-gradient-to-r from-purple-50 to-purple-100 text-gray-900 py-16">
+    <section className="bg-gradient-to-b from-blue-50 to-teal-100 text-gray-900 py-16">
       <div className="container mx-auto px-4">
         {/* Heading */}
-        <h1 className="text-5xl font-extrabold text-purple-900 mb-8 text-center">
+        <h1 className="text-5xl font-bold text-teal-900 mb-8 text-center">
           Curricular Areas
         </h1>
 
         {/* Paragraph */}
-        <p className="text-xl text-gray-800 leading-relaxed mb-12 max-w-4xl mx-auto">
+        <p className="text-lg text-gray-700 leading-relaxed mb-12 max-w-4xl mx-auto text-center">
           Curriculum areas are essential for achieving desired learning
           outcomes. While practical considerations influence their structure,
           these areas are also grounded in specific knowledge domains, inquiry
@@ -21,22 +23,20 @@ const Curricular = () => {
 
         {/* Square Boxes */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div className="relative bg-gradient-to-br from-green-100 to-green-300 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex items-center justify-center aspect-w-1 aspect-h-1">
-            <h3 className="text-3xl font-semibold text-green-800 z-10">
-              Core Areas
-            </h3>
+          <div className="relative bg-gradient-to-br from-teal-200 to-teal-400 p-8 rounded-lg shadow-lg transition-shadow duration-300 flex items-center justify-center aspect-w-1 aspect-h-1 ">
+            <h3 className="text-3xl font-semibold text-teal-900">Core Areas</h3>
           </div>
-          <div className="relative bg-gradient-to-br from-yellow-200 to-yellow-400 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex items-center justify-center aspect-w-1 aspect-h-1">
-            <h3 className="text-3xl font-semibold text-yellow-800 z-10">
+          <div className="relative bg-gradient-to-br from-blue-200 to-blue-400 p-8 rounded-lg shadow-lg transition-shadow duration-300 flex items-center justify-center aspect-w-1 aspect-h-1">
+            <h3 className="text-3xl font-semibold text-blue-900">
               Non-Core Areas
             </h3>
           </div>
         </div>
 
         {/* Core Areas Section */}
-        <div className="bg-gradient-to-r from-green-50 to-green-100 py-12 px-6 rounded-lg mb-16 shadow-lg">
+        <div className="bg-gradient-to-r from-teal-50 to-teal-100 py-12 px-6 rounded-lg mb-16 shadow-lg">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-extrabold text-green-900 mb-12 text-center">
+            <h2 className="text-4xl font-bold text-teal-900 mb-12 text-center">
               Core Areas
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -65,9 +65,9 @@ const Curricular = () => {
               ].map(({ title, description }) => (
                 <div
                   key={title}
-                  className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:bg-green-50 transition-colors duration-300"
+                  className="bg-white p-8 rounded-lg shadow-lg border border-gray-200 hover:bg-teal-50 transition-colors duration-300"
                 >
-                  <h3 className="text-2xl font-semibold text-green-800 mb-4">
+                  <h3 className="text-2xl font-semibold text-teal-800 mb-4">
                     {title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -102,9 +102,9 @@ const Curricular = () => {
               ].map(({ title, description }) => (
                 <div
                   key={title}
-                  className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:bg-green-50 transition-colors duration-300"
+                  className="bg-white p-8 rounded-lg shadow-lg border border-gray-200 hover:bg-teal-50 transition-colors duration-300"
                 >
-                  <h3 className="text-2xl font-semibold text-green-800 mb-4">
+                  <h3 className="text-2xl font-semibold text-teal-800 mb-4">
                     {title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -121,9 +121,9 @@ const Curricular = () => {
         </div>
 
         {/* Non-Core Areas Section */}
-        <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 py-12 px-6 rounded-lg shadow-lg">
+        <div className="bg-gradient-to-r from-blue-50 to-blue-100 py-12 px-6 rounded-lg shadow-lg">
           <div className="max-w-6xl mx-auto relative">
-            <h2 className="text-4xl font-extrabold text-yellow-900 mb-12 text-center">
+            <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center">
               Non-Core Areas
             </h2>
             <div className="flex flex-col md:flex-row items-start justify-between">
@@ -134,7 +134,7 @@ const Curricular = () => {
                     title: "Physical Education and Well-being",
                     description: [
                       "Sports, yoga, and physical activities promote health and emotional balance.",
-                      "They instil ethical, moral, and democratic values.",
+                      "They instill ethical, moral, and democratic values.",
                     ],
                   },
                   {
@@ -155,10 +155,10 @@ const Curricular = () => {
                 ].map(({ title, description }) => (
                   <div
                     key={title}
-                    className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:bg-yellow-50 transition-colors duration-300 flex items-start"
+                    className="bg-white p-8 rounded-lg shadow-lg border border-gray-200 hover:bg-blue-50 transition-colors duration-300 flex items-start"
                   >
                     <div>
-                      <h3 className="text-2xl font-semibold text-yellow-800 mb-4">
+                      <h3 className="text-2xl font-semibold text-blue-800 mb-4">
                         {title}
                       </h3>
                       <p className="text-gray-700 leading-relaxed">
@@ -177,11 +177,25 @@ const Curricular = () => {
                 <img
                   src={noncore}
                   alt="Non-Core Areas"
-                  className="w-full h-auto rounded-lg shadow-lg border-2 border-yellow-300  duration-300"
+                  className="w-full h-auto rounded-lg shadow-lg border-2 border-blue-300 duration-300 transition-transform"
                 />
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Full-Width Images at the Bottom */}
+        <div className="flex flex-col md:flex-row mt-16 gap-4">
+          <img
+            src={noncore2}
+            alt="Full Width Image 1"
+            className="w-full h-full md:h-[100vh] object-cover rounded-lg shadow-md transition-all duration-300"
+          />
+          <img
+            src={noncore3}
+            alt="Full Width Image 2"
+            className="w-full h-full md:h-[100vh] object-cover rounded-lg shadow-md transition-all duration-300 "
+          />
         </div>
       </div>
     </section>

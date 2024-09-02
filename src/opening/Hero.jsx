@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import NcfeImage from "../images/mcf-image.png"; // Update the path according to your file structure
 import { Link } from "react-router-dom";
+import HistoryPage from "./History";
 
 const Hero = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -10,22 +11,20 @@ const Hero = () => {
   const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
 
   const options = [
-    { title: "History", link: "/history" },
     { title: "Approach", link: "/approach" },
-    { title: "Curricular Areas", link: "/curricular" },
     { title: "Cross Cutting Themes", link: "/cct" },
     { title: "Culture", link: "/culture" },
   ];
 
   return (
-    <section className="bg-gray-100 text-gray-900 relative py-16">
+    <section className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-16">
       <div className="container mx-auto px-4 lg:px-8 max-w-screen-xl">
         <div className="grid lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7">
             <h1 className="text-4xl font-bold tracking-tight mb-6 md:text-5xl xl:text-6xl">
               National Curriculum Framework 2023
             </h1>
-            <p className="text-gray-700 mb-8 text-lg md:text-xl lg:text-lg">
+            <p className="text-gray-200 mb-8 text-lg md:text-xl lg:text-lg">
               The NCF 2023 focuses on the all-round development of students,
               emphasizing not just academic learning but also life skills,
               emotional well-being, and values like empathy, ethics, and
@@ -34,7 +33,7 @@ const Hero = () => {
             <div className="relative flex space-x-4">
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-blue-200"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300"
               >
                 Get started
                 <svg
@@ -53,7 +52,7 @@ const Hero = () => {
               <div className="relative">
                 <button
                   onClick={toggleDropdown}
-                  className="relative inline-flex items-center justify-center px-6 py-3 text-base font-medium text-blue-600 border border-blue-600 rounded-lg bg-white hover:bg-blue-100 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-blue-200"
+                  className="relative inline-flex items-center justify-center px-6 py-3 text-base font-medium text-blue-600 border border-blue-600 rounded-lg bg-white hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300"
                 >
                   Curriculum
                   <svg
@@ -76,7 +75,7 @@ const Hero = () => {
                         <Link
                           key={option.title}
                           to={option.link}
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-300"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300"
                           onClick={() => setDropdownOpen(false)} // Close dropdown on click
                         >
                           {option.title}
@@ -94,12 +93,13 @@ const Hero = () => {
               alt="mockup"
               className="w-full h-auto lg:max-w-md rounded-md shadow-md"
             />
-            <p className="mt-4 text-sm text-gray-600 text-center lg:text-right">
+            <p className="mt-4 text-sm text-gray-300 text-center lg:text-right">
               Presented by CoGrad
             </p>
           </div>
         </div>
       </div>
+      <HistoryPage />
     </section>
   );
 };
