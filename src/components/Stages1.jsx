@@ -82,9 +82,12 @@ const Stages1 = () => {
             aria-expanded={showDetails}
             aria-controls="details1"
           >
-            <h3 className="text-xl font-bold text-center text-white">
+            <h3 className="text-xl font-bold mb-4 text-center text-white">
               Stages of Child Development
             </h3>
+            <p className="text-white text-center text-sm">
+              Click to learn more
+            </p>
           </div>
         </div>
         {/* Center Box */}
@@ -97,9 +100,12 @@ const Stages1 = () => {
             aria-expanded={showDetails2}
             aria-controls="details2"
           >
-            <h3 className="text-xl font-bold text-center text-white">
+            <h3 className="text-xl font-bold mb-4 text-center text-white">
               Role of Family in Child Development
             </h3>
+            <p className="text-white text-center text-sm">
+              Click to learn more
+            </p>
           </div>
         </div>
         {/* Right Box */}
@@ -112,9 +118,12 @@ const Stages1 = () => {
             aria-expanded={showDetails3}
             aria-controls="details3"
           >
-            <h3 className="text-xl font-bold text-center text-white">
+            <h3 className="text-xl mb-4 font-bold text-center text-white">
               Role of Peers in Child Development
             </h3>
+            <p className="text-white text-center text-sm">
+              Click to learn more
+            </p>
           </div>
         </div>
       </div>
