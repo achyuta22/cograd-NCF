@@ -10,6 +10,7 @@ import QuizPage from "./opening/Years";
 import Approach from "./opening/Approach";
 import UserPage from "./opening/User";
 import HistoryPage from "./opening/History";
+import SchoolQuiz from "./opening/SchoolSujectsQuiz";
 function App() {
   return (
     <Router>
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/school-subjects" element={<SchoolSubjects />} />
         <Route path="/years" element={<QuizPage />} />
+        <Route path="/schoolQuiz" element={<SchoolQuiz />} />
         {/* <Route path="/approach" element={<Approach />} /> */}
       </Routes>
     </Router>
