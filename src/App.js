@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CCT from "./opening/CCT";
 import Culture from "./opening/Culture";
 import Hero from "./opening/Hero";
-import Navbar from "./opening/Navbar";
 import SchoolSubjects from "./opening/schoolSubjects";
 import QuizPage from "./opening/Years";
 // import Approach from "./opening/Approach";
@@ -13,10 +12,7 @@ import HistoryPage from "./opening/History";
 function App() {
   return (
     <Router>
-      <Navbar />
-
-
-<Routes>
+      <Routes>
         <Route path="/" element={<Hero />} />
 
         <Route path="/cct" element={<CCT />} />
