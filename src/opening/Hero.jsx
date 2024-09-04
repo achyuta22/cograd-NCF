@@ -118,7 +118,7 @@ const Hero = () => {
             <img
               src={NcfeImage}
               alt="mockup"
-              className="w-full h-auto lg:max-w-md rounded-lg shadow-xl transform  transition-transform duration-500"
+              className="w-full h-auto lg:max-w-md rounded-lg shadow-xl duration-500"
             />
             <p className="mt-4 text-sm text-gray-300 text-center lg:text-right">
               Presented by CoGrad
