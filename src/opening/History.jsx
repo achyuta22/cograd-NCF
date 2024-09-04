@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import his1 from "../images/history1.png";
 
 const HistoryPage = () => {
+  const navigate = useNavigate(); // Initialize useNavigate hook
+
+  // Handlers for navigation
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="bg-gradient-to-r from-teal-100 to-blue-100 min-h-screen">
       {/* Header Section */}
@@ -31,7 +39,7 @@ const HistoryPage = () => {
             <img
               src={his1}
               alt="History of NCF"
-              className="rounded-lg shadow-xl w-full max-w-md object-cover transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+              className="rounded-lg shadow-xl w-full max-w-md object-cover transform transition duration-300 "
             />
           </div>
 
@@ -51,8 +59,11 @@ const HistoryPage = () => {
                 </li>
                 <li>Time Allocation</li>
               </ul>
-              <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
-                Know More
+              <button
+                className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
+                onClick={() => handleNavigate("/approach")}
+              >
+                Explore More
               </button>
             </section>
 
@@ -69,8 +80,11 @@ const HistoryPage = () => {
                 <li>Guidance and Counselling in Schools</li>
                 <li>Educational Technology in Schools</li>
               </ul>
-              <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
-                Know More
+              <button
+                className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
+                onClick={() => handleNavigate("/cct")}
+              >
+                Explore More
               </button>
             </section>
           </div>
@@ -95,8 +109,11 @@ const HistoryPage = () => {
               <li>Vocational Education</li>
               <li>Subjects in Grades 11 and 12</li>
             </ul>
-            <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
-              Know More
+            <button
+              className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
+              onClick={() => handleNavigate("/school-subjects")}
+            >
+              Explore More
             </button>
           </section>
 
@@ -109,8 +126,11 @@ const HistoryPage = () => {
               <li>School Culture</li>
               <li>School Processes</li>
             </ul>
-            <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
-              Know More
+            <button
+              className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
+              onClick={() => handleNavigate("/culture")}
+            >
+              Explore More
             </button>
           </section>
 
@@ -125,14 +145,16 @@ const HistoryPage = () => {
               <li>Enabling and Empowering Teachers</li>
               <li>Community and Family Engagement</li>
             </ul>
-            <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
-              Know More
+            <button
+              className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
+              onClick={() => handleNavigate("/ecosystem")}
+            >
+              Explore More
             </button>
           </section>
         </div>
 
         {/* 6x6 Table Section */}
-
         <section className="mt-10">
           <h2 className="text-3xl font-semibold text-blue-800 mb-4">
             National Curriculum Framework Highlights

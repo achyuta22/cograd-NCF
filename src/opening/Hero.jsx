@@ -37,7 +37,7 @@ const Hero = () => {
                 </svg>
               </Link>
             </div>
-            <div className="mt-2">
+            {/* <div className="mt-2">
               <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 items-center justify-center">
                 <Link
                   to="/approach"
@@ -112,7 +112,7 @@ const Hero = () => {
                   </svg>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="lg:col-span-5 flex flex-col items-center lg:items-end">
             <img
