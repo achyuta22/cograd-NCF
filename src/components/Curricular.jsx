@@ -4,6 +4,7 @@ import noncore2 from "../images/noncore2.jpg"; // Replace with your actual image
 import noncore3 from "../images/noncore3.jpg"; // Replace with your actual image path
 
 const Curricular = () => {
+  
   return (
     <section className="bg-gradient-to-b from-blue-50 to-teal-100 text-gray-900 py-16">
       <div className="container mx-auto px-4">

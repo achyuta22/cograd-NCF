@@ -1,31 +1,24 @@
 import React from "react";
-import his1 from "../images/history1.png"; // Ensure this path is correct
+import his1 from "../images/history1.png";
 
 const HistoryPage = () => {
   return (
-    <div className="bg-blue-50 min-h-screen">
+    <div className="bg-gradient-to-r from-teal-100 to-blue-100 min-h-screen">
       {/* Header Section */}
-      <header className="relative bg-blue-900 text-white py-16">
+      <header className="relative bg-gradient-to-r from-blue-600 to-blue-900 text-white py-16">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{
-            backgroundImage: `url(${his1})`,
-            zIndex: -1,
-          }}
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: `url(${his1})`, zIndex: -1 }}
         ></div>
 
         <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
             History of the National Curriculum Framework (NCF)
           </h1>
           <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto">
             An Overview of the NCF Structure and its Components
           </p>
-          {/* Call to Action Button */}
-          <button className="mt-6 px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white font-semibold rounded-full shadow-md transition duration-300">
-            Learn More
-          </button>
         </div>
       </header>
 
@@ -58,7 +51,6 @@ const HistoryPage = () => {
                 </li>
                 <li>Time Allocation</li>
               </ul>
-              {/* Know More Button */}
               <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
                 Know More
               </button>
@@ -140,6 +132,7 @@ const HistoryPage = () => {
         </div>
 
         {/* 6x6 Table Section */}
+
         <section className="mt-10">
           <h2 className="text-3xl font-semibold text-blue-800 mb-4">
             National Curriculum Framework Highlights
@@ -288,6 +281,7 @@ const HistoryPage = () => {
               </tbody>
             </table>
           </div>
+          ;
         </section>
       </main>
     </div>
