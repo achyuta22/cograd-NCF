@@ -1,7 +1,7 @@
 import React from "react";
-import NcfeImage from "../images/mcf-image.png"; // Update the path according to your file structure
-import HistoryPage from "./History";
-import { Link } from "react-router-dom"; // Import Link for routing
+import { Link } from "react-router-dom"; // Ensure react-router-dom is installed
+import NcfeImage from "../images/mcf-image.png"; // Check this path
+import HistoryPage from "./History"; // Ensure this component exists and is correctly imported
 
 const Hero = () => {
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="lg:col-span-5 flex flex-col items-center lg:items-end">
             <img
               src={NcfeImage}
-              alt="mockup"
+              alt="National Curriculum Framework"
               className="w-full h-auto lg:max-w-md rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-500"
             />
             <p className="mt-4 text-sm text-gray-300 text-center lg:text-right">
@@ -51,8 +51,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Optional Additional Sections */}
-      <HistoryPage />
+      {/* Check if HistoryPage component exists */}
+      {HistoryPage && <HistoryPage />}
     </section>
   );
 };
