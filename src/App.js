@@ -2,19 +2,27 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CCT from "./opening/CCT";
 import Culture from "./opening/Culture";
-import HistoryPage from "./opening/History";
 import Hero from "./opening/Hero";
 import Navbar from "./opening/Navbar";
 import SchoolSubjects from "./opening/schoolSubjects";
 import QuizPage from "./opening/Years";
 // import Approach from "./opening/Approach";
+import Approach from "./opening/Approach";
+import UserPage from "./opening/User";
+import HistoryPage from "./opening/History";
 function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
+
+
+<Routes>
+        <Route path="/" element={<Hero />} />
+
         <Route path="/cct" element={<CCT />} />
         <Route path="/culture" element={<Culture />} />
+        <Route path="/approach" element={<Approach />} />
+        <Route path="/user" element={<UserPage />} />
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/" element={<Hero />} />
         <Route path="/school-subjects" element={<SchoolSubjects />} />

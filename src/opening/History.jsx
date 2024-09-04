@@ -1,31 +1,24 @@
 import React from "react";
-import his1 from "../images/history1.png"; // Ensure this path is correct
+import his1 from "../images/history1.png";
 
 const HistoryPage = () => {
   return (
-    <div className="bg-blue-50 min-h-screen">
+    <div className="bg-gradient-to-r from-teal-100 to-blue-100 min-h-screen">
       {/* Header Section */}
-      <header className="relative bg-blue-900 text-white py-16">
+      <header className="relative bg-gradient-to-r from-blue-600 to-blue-900 text-white py-16">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{
-            backgroundImage: `url(${his1})`,
-            zIndex: -1,
-          }}
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: `url(${his1})`, zIndex: -1 }}
         ></div>
 
         <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
             History of the National Curriculum Framework (NCF)
           </h1>
           <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto">
             An Overview of the NCF Structure and its Components
           </p>
-          {/* Call to Action Button */}
-          <button className="mt-6 px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white font-semibold rounded-full shadow-md transition duration-300">
-            Learn More
-          </button>
         </div>
       </header>
 
@@ -45,9 +38,9 @@ const HistoryPage = () => {
           {/* Content Sections - Second and Third Columns */}
           <div className="md:col-span-2 space-y-8">
             {/* Part A: Approach */}
-            <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
+            <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl relative">
               <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-                PART A: Approach
+                Approach
               </h2>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>Aims and Curricular Areas of School Education</li>
@@ -58,12 +51,15 @@ const HistoryPage = () => {
                 </li>
                 <li>Time Allocation</li>
               </ul>
+              <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+                Know More
+              </button>
             </section>
 
             {/* Part B: Cross-Cutting Themes */}
             <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
               <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-                PART B: Cross-Cutting Themes
+                Cross-Cutting Themes
               </h2>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>Rootedness in India and Indian Knowledge Systems</li>
@@ -73,6 +69,9 @@ const HistoryPage = () => {
                 <li>Guidance and Counselling in Schools</li>
                 <li>Educational Technology in Schools</li>
               </ul>
+              <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+                Know More
+              </button>
             </section>
           </div>
         </div>
@@ -82,7 +81,7 @@ const HistoryPage = () => {
           {/* Part C: School Subjects */}
           <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
             <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-              PART C: School Subjects
+              School Subjects
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               <li>Learning in the Foundational Stage</li>
@@ -96,23 +95,29 @@ const HistoryPage = () => {
               <li>Vocational Education</li>
               <li>Subjects in Grades 11 and 12</li>
             </ul>
+            <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+              Know More
+            </button>
           </section>
 
           {/* Part D: School Culture and Processes */}
           <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
             <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-              PART D: School Culture and Processes
+              School Culture and Processes
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               <li>School Culture</li>
               <li>School Processes</li>
             </ul>
+            <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+              Know More
+            </button>
           </section>
 
           {/* Part E: Creating a Supportive Ecosystem */}
           <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
             <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-              PART E: Creating a Supportive Ecosystem
+              Creating a Supportive Ecosystem
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               <li>Capacity Building for Implementation</li>
@@ -120,10 +125,14 @@ const HistoryPage = () => {
               <li>Enabling and Empowering Teachers</li>
               <li>Community and Family Engagement</li>
             </ul>
+            <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+              Know More
+            </button>
           </section>
         </div>
 
         {/* 6x6 Table Section */}
+
         <section className="mt-10">
           <h2 className="text-3xl font-semibold text-blue-800 mb-4">
             National Curriculum Framework Highlights
@@ -272,6 +281,7 @@ const HistoryPage = () => {
               </tbody>
             </table>
           </div>
+          ;
         </section>
       </main>
     </div>
