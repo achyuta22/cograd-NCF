@@ -37,88 +37,12 @@ const Hero = () => {
                 </svg>
               </Link>
             </div>
-            {/* <div className="mt-2">
-              <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 items-center justify-center">
-                <Link
-                  to="/approach"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-800 transition-colors duration-300 transform hover:scale-105"
-                >
-                  Approach
-                  <svg
-                    className="w-5 h-5 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </Link>
-                <Link
-                  to="/cct"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-800transition-colors duration-300 transform hover:scale-105"
-                >
-                  Cross Cutting Themes
-                  <svg
-                    className="w-5 h-5 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </Link>
-                <Link
-                  to="/culture"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-800 transition-colors duration-300 transform hover:scale-105"
-                >
-                  Culture
-                  <svg
-                    className="w-5 h-5 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </Link>
-                <Link
-                  to="/school-subjects"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-800 transition-colors duration-300 transform hover:scale-105"
-                >
-                  School Subjects
-                  <svg
-                    className="w-5 h-5 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </Link>
-              </div>
-            </div> */}
           </div>
           <div className="lg:col-span-5 flex flex-col items-center lg:items-end">
             <img
               src={NcfeImage}
               alt="mockup"
-              className="w-full h-auto lg:max-w-md rounded-lg shadow-xl duration-500"
+              className="w-full h-auto lg:max-w-md rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-500"
             />
             <p className="mt-4 text-sm text-gray-300 text-center lg:text-right">
               Presented by CoGrad
