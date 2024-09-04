@@ -1,17 +1,28 @@
 import React, { useState } from "react";
-import { FaUser, FaPhone, FaEnvelope, FaBook, FaSchool } from "react-icons/fa";
+import {
+  FaUser,
+  FaBirthdayCake,
+  FaBook,
+  FaUserGraduate,
+  FaChalkboardTeacher,
+  FaSchool,
+  FaCalendarAlt,
+} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const UserPage = () => {
   const [formData, setFormData] = useState({
     name: "",
-    phoneNumber: "",
-    email: "",
-    classOfStudy: "",
-    schoolName: "",
+    age: "",
+    qualification: "",
+    subject: "",
+    designation: "",
+    teachingStage: "",
+    currentSchool: "",
+    teachingExperience: "",
   });
 
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({
@@ -24,8 +35,7 @@ const UserPage = () => {
     e.preventDefault();
     console.log("User Data:", formData);
     alert("Form submitted successfully!");
-
-    navigate("/history"); // Navigate to the /history page after form submission
+    navigate("/history");
   };
 
   return (
@@ -33,7 +43,7 @@ const UserPage = () => {
       <div className="container mx-auto px-4 lg:px-8 max-w-screen-md">
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-3xl font-bold mb-6 text-red-600 text-center">
-            Student Information
+            Teacher Information
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="relative">
@@ -58,81 +68,154 @@ const UserPage = () => {
 
             <div className="relative">
               <label
-                htmlFor="phoneNumber"
+                htmlFor="age"
                 className="block text-lg font-medium text-gray-700"
               >
-                Phone Number
+                Age
               </label>
-              <FaPhone className="absolute left-2 top-11 text-gray-400" />
+              <FaBirthdayCake className="absolute left-2 top-11 text-gray-400" />
               <input
-                type="tel"
-                id="phoneNumber"
-                name="phoneNumber"
-                value={formData.phoneNumber}
+                type="number"
+                id="age"
+                name="age"
+                value={formData.age}
                 onChange={handleChange}
                 required
                 className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
-                placeholder="Enter your phone number"
+                placeholder="Enter your age"
               />
             </div>
 
             <div className="relative">
               <label
-                htmlFor="email"
+                htmlFor="qualification"
                 className="block text-lg font-medium text-gray-700"
               >
-                Email
+                Qualification
               </label>
-              <FaEnvelope className="absolute left-2 top-11 text-gray-400" />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
+              <FaUserGraduate className="absolute left-2 top-11 text-gray-400" />
+              <select
+                id="qualification"
+                name="qualification"
+                value={formData.qualification}
                 onChange={handleChange}
                 required
                 className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
-                placeholder="Enter your email"
-              />
+              >
+                <option value="">Select your qualification</option>
+                <option value="Bachelors + B.Ed">Bachelors + B.Ed</option>
+                <option value="Masters + B.Ed">Masters + B.Ed</option>
+                <option value="PhD">PhD</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
 
             <div className="relative">
               <label
-                htmlFor="classOfStudy"
+                htmlFor="subject"
                 className="block text-lg font-medium text-gray-700"
               >
-                Class of Study
+                Subject
               </label>
               <FaBook className="absolute left-2 top-11 text-gray-400" />
               <input
                 type="text"
-                id="classOfStudy"
-                name="classOfStudy"
-                value={formData.classOfStudy}
+                id="subject"
+                name="subject"
+                value={formData.subject}
                 onChange={handleChange}
                 required
                 className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
-                placeholder="Enter your class of study"
+                placeholder="Enter your subject"
               />
             </div>
 
             <div className="relative">
               <label
-                htmlFor="schoolName"
+                htmlFor="designation"
                 className="block text-lg font-medium text-gray-700"
               >
-                School Name
+                Designation
+              </label>
+              <FaChalkboardTeacher className="absolute left-2 top-11 text-gray-400" />
+              <select
+                id="designation"
+                name="designation"
+                value={formData.designation}
+                onChange={handleChange}
+                required
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+              >
+                <option value="">Select your designation</option>
+                <option value="PRT">PRT</option>
+                <option value="TGT">TGT</option>
+                <option value="PGT">PGT</option>
+                <option value="Vice Principal">Vice Principal</option>
+                <option value="Principal">Principal</option>
+              </select>
+            </div>
+
+            <div className="relative">
+              <label
+                htmlFor="teachingStage"
+                className="block text-lg font-medium text-gray-700"
+              >
+                Stage of Teaching
+              </label>
+              <FaCalendarAlt className="absolute left-2 top-11 text-gray-400" />
+              <select
+                id="teachingStage"
+                name="teachingStage"
+                value={formData.teachingStage}
+                onChange={handleChange}
+                required
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+              >
+                <option value="">Select teaching stage</option>
+                <option value="Foundational">Foundational</option>
+                <option value="Preparatory">Preparatory</option>
+                <option value="Middle">Middle</option>
+                <option value="Secondary">Secondary</option>
+              </select>
+            </div>
+
+            <div className="relative">
+              <label
+                htmlFor="currentSchool"
+                className="block text-lg font-medium text-gray-700"
+              >
+                Current School
               </label>
               <FaSchool className="absolute left-2 top-11 text-gray-400" />
               <input
                 type="text"
-                id="schoolName"
-                name="schoolName"
-                value={formData.schoolName}
+                id="currentSchool"
+                name="currentSchool"
+                value={formData.currentSchool}
                 onChange={handleChange}
                 required
                 className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
-                placeholder="Enter your school name"
+                placeholder="Enter your current school"
+              />
+            </div>
+
+            <div className="relative">
+              <label
+                htmlFor="teachingExperience"
+                className="block text-lg font-medium text-gray-700"
+              >
+                Teaching Experience (in years)
+              </label>
+              <FaCalendarAlt className="absolute left-2 top-11 text-gray-400" />
+              <input
+                type="number"
+                id="teachingExperience"
+                name="teachingExperience"
+                value={formData.teachingExperience}
+                onChange={handleChange}
+                required
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                placeholder="Enter your teaching experience"
               />
             </div>
 

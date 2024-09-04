@@ -3,21 +3,15 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CCT from "./opening/CCT";
 import Culture from "./opening/Culture";
 import Hero from "./opening/Hero";
-import Navbar from "./opening/Navbar";
 import SchoolSubjects from "./opening/schoolSubjects";
 import QuizPage from "./opening/Years";
-// import Approach from "./opening/Approach";
 import Approach from "./opening/Approach";
 import UserPage from "./opening/User";
 import HistoryPage from "./opening/History";
-import SchoolQuiz from "./opening/SchoolSujectsQuiz";
 function App() {
   return (
     <Router>
-      <Navbar />
-
-
-<Routes>
+      <Routes>
         <Route path="/" element={<Hero />} />
 
         <Route path="/cct" element={<CCT />} />
@@ -28,7 +22,6 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/school-subjects" element={<SchoolSubjects />} />
         <Route path="/years" element={<QuizPage />} />
-        <Route path="/schoolQuiz" element={<SchoolQuiz />} />
         {/* <Route path="/approach" element={<Approach />} /> */}
       </Routes>
     </Router>
