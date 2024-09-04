@@ -5,7 +5,7 @@ import culture3 from "../images/culture3.png";
 
 const Culture = () => {
   return (
-    <div className="max-w-screen-xl px-4 py-8 mx-auto bg-blue-50">
+    <div className=" px-8 py-8 mx-auto bg-blue-50">
       {/* Intro Section */}
       <section className="flex flex-col lg:flex-row items-center gap-12 mb-16">
         {/* Text Content */}
