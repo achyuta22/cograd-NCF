@@ -4,6 +4,7 @@ import CCT from "./opening/CCT";
 import Culture from "./opening/Culture";
 import Hero from "./opening/Hero";
 import Approach from "./opening/Approach";
+import UserPage from "./opening/User";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/culture" element={<Culture />} />
         <Route path="/" element={<Hero />} />
         <Route path="/approach" element={<Approach />} />
+        <Route path="/user" element={<UserPage />} />
       </Routes>
     </Router>
   );

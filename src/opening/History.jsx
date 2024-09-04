@@ -45,7 +45,7 @@ const HistoryPage = () => {
           {/* Content Sections - Second and Third Columns */}
           <div className="md:col-span-2 space-y-8">
             {/* Part A: Approach */}
-            <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
+            <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl relative">
               <h2 className="text-3xl font-semibold text-blue-800 mb-4">
                 Approach
               </h2>
@@ -58,12 +58,16 @@ const HistoryPage = () => {
                 </li>
                 <li>Time Allocation</li>
               </ul>
+              {/* Know More Button */}
+              <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+                Know More
+              </button>
             </section>
 
             {/* Part B: Cross-Cutting Themes */}
             <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
               <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-              Cross-Cutting Themes
+                Cross-Cutting Themes
               </h2>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>Rootedness in India and Indian Knowledge Systems</li>
@@ -73,6 +77,9 @@ const HistoryPage = () => {
                 <li>Guidance and Counselling in Schools</li>
                 <li>Educational Technology in Schools</li>
               </ul>
+              <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+                Know More
+              </button>
             </section>
           </div>
         </div>
@@ -96,23 +103,29 @@ const HistoryPage = () => {
               <li>Vocational Education</li>
               <li>Subjects in Grades 11 and 12</li>
             </ul>
+            <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+              Know More
+            </button>
           </section>
 
           {/* Part D: School Culture and Processes */}
           <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
             <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-               School Culture and Processes
+              School Culture and Processes
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               <li>School Culture</li>
               <li>School Processes</li>
             </ul>
+            <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+              Know More
+            </button>
           </section>
 
           {/* Part E: Creating a Supportive Ecosystem */}
           <section className="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
             <h2 className="text-3xl font-semibold text-blue-800 mb-4">
-               Creating a Supportive Ecosystem
+              Creating a Supportive Ecosystem
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               <li>Capacity Building for Implementation</li>
@@ -120,6 +133,9 @@ const HistoryPage = () => {
               <li>Enabling and Empowering Teachers</li>
               <li>Community and Family Engagement</li>
             </ul>
+            <button className="absolute bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+              Know More
+            </button>
           </section>
         </div>
 
