@@ -8,6 +8,8 @@ import QuizPage from "./opening/Years";
 import Approach from "./opening/Approach";
 import UserPage from "./opening/User";
 import HistoryPage from "./opening/History";
+import CardsPage from "./opening/sectione";
+import Sectione1 from "./opening/sectione1";
 function App() {
   return (
     <Router>
