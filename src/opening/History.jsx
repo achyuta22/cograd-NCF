@@ -11,20 +11,20 @@ const HistoryPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-teal-100 to-blue-100 min-h-screen">
+    <div className="bg-gradient-to-r from-blue-200 to-blue-300 min-h-screen">
       {/* Header Section */}
-      <header className="relative bg-gradient-to-r from-blue-600 to-blue-900 text-white py-16">
+      <header className="relative bg-blue-800 text-white py-8">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: `url(${his1})`, zIndex: -1 }}
         ></div>
 
-        <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+        <div className="relative container mx-auto  text-center">
+          {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
             History of the National Curriculum Framework (NCF)
-          </h1>
-          <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto">
+          </h1> */}
+          <p className="text-lg md:text-xl max-w-2xl mx-auto">
             An Overview of the NCF Structure and its Components
           </p>
         </div>

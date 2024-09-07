@@ -8,15 +8,11 @@ import QuizPage from "./opening/Years";
 import Approach from "./opening/Approach";
 import UserPage from "./opening/User";
 import HistoryPage from "./opening/History";
-import ImageGallery from "./opening/supportive";
-import CardsPage from "./opening/sectione";
-import Sectione1 from "./opening/sectione1";
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Hero />} />
-
         <Route path="/cct" element={<CCT />} />
         <Route path="/culture" element={<Culture />} />
         <Route path="/approach" element={<Approach />} />
@@ -25,7 +21,6 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/school-subjects" element={<SchoolSubjects />} />
         <Route path="/years" element={<QuizPage />} />
-        <Route path="imagegallery" element={<ImageGallery />} />
         {/* <Route path="/approach" element={<Approach />} /> */}
         <Route path="/sectione" element={<CardsPage />} />
         <Route path="/sectione1" element={<Sectione1/>} />
