@@ -1,11 +1,11 @@
 import React from "react";
-import NcfeImage from "../images/mcf-image.png"; // Update the path according to your file structure
-import HistoryPage from "./History";
-import { Link } from "react-router-dom"; // Import Link for routing
+import { Link } from "react-router-dom"; // Ensure react-router-dom is installed
+import NcfeImage from "../images/mcf-image.png"; // Check this path
+import HistoryPage from "./History"; // Ensure this component exists and is correctly imported
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-r from-teal-500 to-blue-700 text-white py-16">
+    <section className="bg-blue-500 text-white py-16">
       <div className="container mx-auto px-4 lg:px-8 max-w-screen-xl">
         <div className="grid lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -20,7 +20,7 @@ const Hero = () => {
             <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 mb-12">
               <Link
                 to="/user"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-teal-800 rounded-lg shadow-md hover:bg-teal-900 transition-colors duration-300 transform hover:scale-105"
+                className="inline-flex items-center border border-white justify-center px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-900 transition-colors duration-300 transform hover:scale-105"
               >
                 Get Started
                 <svg
@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="lg:col-span-5 flex flex-col items-center lg:items-end">
             <img
               src={NcfeImage}
-              alt="mockup"
+              alt="National Curriculum Framework"
               className="w-full h-auto lg:max-w-md rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-500"
             />
             <p className="mt-4 text-sm text-gray-300 text-center lg:text-right">
@@ -51,8 +51,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Optional Additional Sections */}
-      <HistoryPage />
+      {/* Check if HistoryPage component exists */}
+      {HistoryPage && <HistoryPage />}
     </section>
   );
 };
