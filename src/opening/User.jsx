@@ -39,10 +39,10 @@ const UserPage = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-yellow-400 via-red-400 to-pink-500 text-white py-16">
+    <section className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white py-16">
       <div className="container mx-auto px-4 lg:px-8 max-w-screen-md">
         <div className="bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold mb-6 text-red-600 text-center">
+          <h2 className="text-3xl font-bold mb-6 text-blue-600 text-center">
             Teacher Information
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -61,7 +61,7 @@ const UserPage = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your name"
               />
             </div>
@@ -81,7 +81,7 @@ const UserPage = () => {
                 value={formData.age}
                 onChange={handleChange}
                 required
-                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your age"
               />
             </div>
@@ -100,7 +100,7 @@ const UserPage = () => {
                 value={formData.qualification}
                 onChange={handleChange}
                 required
-                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Select your qualification</option>
                 <option value="Bachelors + B.Ed">Bachelors + B.Ed</option>
@@ -125,7 +125,7 @@ const UserPage = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your subject"
               />
             </div>
@@ -144,7 +144,7 @@ const UserPage = () => {
                 value={formData.designation}
                 onChange={handleChange}
                 required
-                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Select your designation</option>
                 <option value="PRT">PRT</option>
@@ -169,7 +169,7 @@ const UserPage = () => {
                 value={formData.teachingStage}
                 onChange={handleChange}
                 required
-                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Select teaching stage</option>
                 <option value="Foundational">Foundational</option>
@@ -194,7 +194,7 @@ const UserPage = () => {
                 value={formData.currentSchool}
                 onChange={handleChange}
                 required
-                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your current school"
               />
             </div>
@@ -214,7 +214,7 @@ const UserPage = () => {
                 value={formData.teachingExperience}
                 onChange={handleChange}
                 required
-                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-2 pl-10 pr-4 py-2 w-full border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your teaching experience"
               />
             </div>
@@ -222,7 +222,7 @@ const UserPage = () => {
             <div>
               <button
                 type="submit"
-                className="w-full bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300 transition transform hover:scale-105"
+                className="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition transform hover:scale-105"
               >
                 Submit
               </button>

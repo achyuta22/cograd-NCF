@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import his1 from "../images/history1.png";
+import QuizPage from "./Years";
 
 const HistoryPage = () => {
   const navigate = useNavigate(); // Initialize useNavigate hook
@@ -303,9 +304,11 @@ const HistoryPage = () => {
               </tbody>
             </table>
           </div>
-          ;
+        
         </section>
       </main>
+
+      <QuizPage/>
     </div>
   );
 };
