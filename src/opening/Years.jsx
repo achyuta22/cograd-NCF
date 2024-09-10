@@ -22,41 +22,52 @@ const QuizPage = () => {
     }
   };
 
+  const handleNextPage = () => {
+    navigate("/history");
+  };
+
   return (
-    <div className="bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 p-6 flex flex-col items-center">
-      <h1 className="text-3xl font-extrabold text-gray-800 mb-6">
-        Select Years in which various NFCs were formed in India
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-3xl">
-        {options.map((option) => (
-          <button
-            key={option.id}
-            onClick={() => handleClick(option.id)}
-            className={`p-4 rounded-lg border-2 shadow-lg transition-transform transform ${
-              selected.includes(option.id)
-                ? option.isCorrect
-                  ? "bg-green-500 border-green-700 text-white scale-105"
-                  : "bg-red-500 border-red-700 text-white scale-105"
-                : "bg-white border-gray-300 text-gray-800 hover:bg-gray-100"
-            }`}
-          >
-            {option.text}
-          </button>
-        ))}
+    <div className="bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 p-6 flex flex-col items-center min-h-screen">
+      {/* Main content area */}
+      <div className="flex-grow flex flex-col items-center w-full max-w-lg">
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-800 mb-6 text-center">
+          Select Years in which various NFCs were formed in India
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+          {options.map((option) => (
+            <button
+              key={option.id}
+              onClick={() => handleClick(option.id)}
+              className={`p-3 sm:p-4 rounded-lg border-2 shadow-md hover:shadow-xl transition-transform transform ${
+                selected.includes(option.id)
+                  ? option.isCorrect
+                    ? "bg-green-500 border-green-700 text-white scale-105"
+                    : "bg-red-500 border-red-700 text-white scale-105"
+                  : "bg-white border-gray-300 text-gray-800 hover:bg-gray-100"
+              }`}
+            >
+              {option.text}
+            </button>
+          ))}
+        </div>
       </div>
-      <div className="flex justify-between w-full max-w-3xl mt-6">
-        <button
-          onClick={() => navigate("/history")}
-          className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-colors transform hover:scale-105"
-        >
-          Revise
-        </button>
-        <button
-          // onClick={handleNextLesson}
-          className="bg-green-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition-colors transform hover:scale-105"
-        >
-          Next Lesson
-        </button>
+
+      {/* Footer area with fixed buttons */}
+      <div className="w-full fixed bottom-0 py-4 shadow-lg">
+        <div className="flex justify-between w-full max-w-lg mx-auto px-4">
+          <button
+            onClick={() => navigate("/table")}
+            className="flex-1 bg-blue-600 text-white py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors transform hover:scale-105"
+          >
+            Revise
+          </button>
+          <button
+            onClick={handleNextPage}
+            className="flex-1 bg-green-600 text-white py-3 rounded-lg shadow-md hover:bg-green-700 transition-colors transform hover:scale-105 ml-4"
+          >
+            Next Page
+          </button>
+        </div>
       </div>
     </div>
   );

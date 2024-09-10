@@ -35,7 +35,7 @@ const UserPage = () => {
     e.preventDefault();
     console.log("User Data:", formData);
     alert("Form submitted successfully!");
-    navigate("/history");
+    navigate("/table");
   };
 
   return (

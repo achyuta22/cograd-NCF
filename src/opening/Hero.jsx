@@ -52,7 +52,7 @@ const Hero = () => {
       </div>
 
       {/* Check if HistoryPage component exists */}
-      {HistoryPage && <HistoryPage />}
+      {/* {HistoryPage && <HistoryPage />} */}
     </section>
   );
 };
