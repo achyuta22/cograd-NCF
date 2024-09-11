@@ -9,31 +9,31 @@ const Historytable = () => {
   };
 
   return (
-    <div className="p-4">
-      <section className="mt-10">
-        <h2 className="text-2xl font-semibold text-blue-800 mb-6 text-center">
+    <div className="p-4 max-w-4xl mx-auto">
+      <section className="mt-6">
+        <h2 className="text-xl font-bold text-teal-700 mb-12 text-center md:text-2xl">
           National Curriculum Framework Highlights
         </h2>
-        <div className="overflow-x-auto">
-          <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-lg">
-            <thead className="bg-blue-200">
+        <div className="overflow-x-auto rounded-lg shadow-lg">
+          <table className="min-w-full bg-white border border-gray-200 rounded-lg">
+            <thead className="bg-teal-500">
               <tr>
-                <th className="px-3 py-3 text-left text-blue-800 text-xs md:text-sm">
+                <th className="px-3 py-3 text-left text-white text-sm md:text-base font-semibold">
                   Aspect
                 </th>
-                <th className="px-3 py-3 text-left text-blue-800 text-xs md:text-sm">
+                <th className="px-3 py-3 text-left text-white text-sm md:text-base font-semibold">
                   NCF 1975
                 </th>
-                <th className="px-3 py-3 text-left text-blue-800 text-xs md:text-sm">
+                <th className="px-3 py-3 text-left text-white text-sm md:text-base font-semibold">
                   NCF 1988
                 </th>
-                <th className="px-3 py-3 text-left text-blue-800 text-xs md:text-sm">
+                <th className="px-3 py-3 text-left text-white text-sm md:text-base font-semibold">
                   NCF 2000
                 </th>
-                <th className="px-3 py-3 text-left text-blue-800 text-xs md:text-sm">
+                <th className="px-3 py-3 text-left text-white text-sm md:text-base font-semibold">
                   NCF 2005
                 </th>
-                <th className="px-3 py-3 text-left text-blue-800 text-xs md:text-sm">
+                <th className="px-3 py-3 text-left text-white text-sm md:text-base font-semibold">
                   NCF 2023
                 </th>
               </tr>
@@ -103,17 +103,17 @@ const Historytable = () => {
               ].map((row, index) => (
                 <tr
                   key={index}
-                  className={`hover:bg-gray-200 ${
+                  className={`hover:bg-gray-50 transition-colors duration-300 ${
                     index % 2 === 0 ? "bg-gray-100" : "bg-white"
                   }`}
                 >
-                  <td className="px-3 py-4 border-b text-gray-700 text-xs md:text-sm font-medium">
+                  <td className="px-3 py-4 border-b text-gray-800 text-sm md:text-base font-medium">
                     {row.aspect}
                   </td>
                   {row.values.map((value, idx) => (
                     <td
                       key={idx}
-                      className="px-3 py-4 border-b text-gray-600 text-xs md:text-sm"
+                      className="px-3 py-4 border-b text-gray-700 text-sm md:text-base"
                     >
                       {value}
                     </td>
@@ -127,7 +127,7 @@ const Historytable = () => {
 
       {/* Next Page Button */}
       <button
-        className="fixed bottom-5 right-5 bg-blue-600 text-white py-2 px-4 rounded-full shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
+        className="fixed bottom-5 right-5 lg:bottom-6 lg:right-6 bg-teal-600 text-white py-2 px-6 rounded-full shadow-lg hover:bg-teal-700 transition-transform transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-teal-300"
         onClick={handleNextPage}
       >
         Next Page

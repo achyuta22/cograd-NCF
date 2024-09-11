@@ -24,6 +24,14 @@ import Stage2 from "./Approach2/Stage2";
 import Stage3 from "./Approach2/Stage3";
 import Stage4 from "./Approach2/Stage4";
 import Stages5 from "./Approach2/Stages5";
+import Learning1 from "./Approach3/Learning1";
+import Learning2 from "./Approach3/Learning2";
+import Assess1 from "./Approach4/Assess1";
+import Assess2 from "./Approach4/Assess2";
+import Foundation from "./Approach4/Foundation";
+import Prepratory from "./Approach4/Prepratory";
+import Middle from "./Approach4/Middle";
+import Secondary from "./Approach4/Secondary";
 function App() {
   return (
     <Router>
@@ -38,8 +46,6 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/school-subjects" element={<SchoolSubjects />} />
         <Route path="/years" element={<QuizPage />} />
-        <Route path="/approach-learning" element={<Approach2 />} />
-        <Route path="/approach-assessment" element={<Approach3 />} />
 
         {/* Approach Chapter1 */}
         <Route path="/approach-aim" element={<Slide1 />} />
@@ -55,6 +61,18 @@ function App() {
         <Route path="/stage3" element={<Stage3 />} />
         <Route path="/stage4" element={<Stage4 />} />
         <Route path="/stage5" element={<Stages5 />} />
+        {/* Approach Chapter3*/}
+
+        <Route path="/approach-learning" element={<Learning1 />} />
+        <Route path="/learning2" element={<Learning2 />} />
+        {/* Approach Chapter4*/}
+
+        <Route path="/approach-assessment" element={<Assess1 />} />
+        <Route path="/assess2" element={<Assess2 />} />
+        <Route path="/foundation" element={<Foundation />} />
+        <Route path="/prepatory" element={<Prepratory />} />
+        <Route path="/middle" element={<Middle />} />
+        <Route path="/secondary" element={<Secondary />} />
 
         {/* <Route path="/approach" element={<Approach />} /> */}
         <Route path="/sectione" element={<CardsPage />} />
