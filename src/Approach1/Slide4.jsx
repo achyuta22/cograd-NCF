@@ -27,14 +27,13 @@ const Slide4 = () => {
 
   const handleNextPage = () => {
     if (selectedAims.length > 0) {
-      console.log("Selected Aims:", selectedAims);
       navigate("/slide5");
     }
   };
 
   return (
-    <div className="relative py-4 px-4 lg:px-8 bg-gradient-to-b from-blue-50 via-white to-blue-100 min-h-screen flex flex-col items-center">
-      <div className="max-w-4xl mx-auto p-4 bg-white shadow-lg rounded-lg flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
+    <div className="relative py-6 px-4 lg:px-8 bg-gradient-to-b from-teal-50 via-white to-teal-100 min-h-screen flex flex-col items-center">
+      <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
         {/* Left Content */}
         <div className="w-full lg:w-2/3">
           <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-900">
@@ -47,25 +46,29 @@ const Slide4 = () => {
                   type="checkbox"
                   checked={selectedAims.includes(aim)}
                   onChange={() => handleSelect2(aim)}
-                  className="h-5 w-5 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  className="h-5 w-5 text-teal-600 focus:ring-teal-500 border-gray-300 rounded"
                 />
                 <label className="text-base text-gray-800">{aim}</label>
               </li>
             ))}
           </ul>
-          <h2 className="text-xl lg:text-2xl font-semibold mt-8 text-gray-900">
-            Selected Aims:
-          </h2>
-          <ul className="mt-4 space-y-2">
-            {selectedAims.map((aim, index) => (
-              <li
-                key={index}
-                className="p-3 bg-blue-100 text-blue-800 rounded-lg shadow-sm"
-              >
-                {aim}
-              </li>
-            ))}
-          </ul>
+          {selectedAims.length > 0 && (
+            <div className="mt-6">
+              <h2 className="text-xl lg:text-2xl font-semibold text-gray-900">
+                Selected Aims:
+              </h2>
+              <ul className="mt-4 space-y-2">
+                {selectedAims.map((aim, index) => (
+                  <li
+                    key={index}
+                    className="p-3 bg-teal-100 text-teal-800 rounded-lg shadow-sm"
+                  >
+                    {aim}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
         {/* Right Image */}
@@ -82,9 +85,9 @@ const Slide4 = () => {
       <button
         onClick={handleNextPage}
         disabled={selectedAims.length === 0}
-        className={`absolute bottom-6 right-6 px-6 py-3 rounded-lg shadow-lg transition-transform transform duration-300 ${
+        className={`absolute bottom-6 right-6 px-6 py-3 rounded-full shadow-lg transition-transform duration-300 ${
           selectedAims.length > 0
-            ? "bg-blue-600 text-white hover:bg-blue-700 cursor-pointer"
+            ? "bg-teal-600 text-white hover:bg-teal-700 cursor-pointer"
             : "bg-gray-400 text-gray-700 cursor-not-allowed"
         }`}
       >
