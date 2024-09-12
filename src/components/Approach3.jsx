@@ -1,110 +1,7 @@
 import React, { useState } from "react";
-import AppLS from "./AppLS";
 
 // Data for each box
 const boxData = {
-  box1: (
-    <div className="p-2 bg-white rounded-lg ">
-      <h2 className="text-3xl font-bold mb-4 text-gray-900">
-        How does Learning Standards look like?
-      </h2>
-      <ul className="list-disc pl-5 space-y-2 text-gray-800">
-        <li>
-          <strong className="text-green-700">Specific and Actionable:</strong>{" "}
-          Clearly defined and relevant to different stages of education.
-        </li>
-        <li>
-          <strong className="text-green-700">
-            Aligned with Educational Goals:
-          </strong>{" "}
-          Directly linked to the overall aims of education.
-        </li>
-        <li>
-          <strong className="text-green-700">Coherent and Connected:</strong>{" "}
-          Forming a logical and interconnected system that supports holistic
-          development.
-        </li>
-      </ul>
-      <p className="mt-4 text-gray-800">
-        By establishing clear and measurable Learning Standards, education can
-        be more focused and effective in achieving its desired outcomes.
-      </p>
-    </div>
-  ),
-  box2: (
-    <div className="p-2 bg-white ">
-      {/* Heading */}
-      <h1 className="text-4xl font-extrabold text-center mb-6 text-green-800">
-        From Aims to Learning Outcomes
-      </h1>
-
-      {/* Framework Description */}
-      <div className="max-w-3xl mx-auto mb-6 text-center">
-        <p className="text-lg text-gray-800">
-          This framework emphasizes a clear and logical progression from broad
-          educational goals to specific, measurable learning objectives. This
-          process, known as{" "}
-          <strong className="text-green-700">"flow-down"</strong>, ensures
-          alignment and coherence across all levels of curriculum development.
-        </p>
-      </div>
-
-      {/* Hierarchical Structure */}
-      <div className="space-y-6">
-        {/* Aims of Education */}
-        <div className="bg-green-50 p-6 rounded-lg border border-green-200 shadow-md">
-          <h2 className="text-2xl font-semibold text-green-700 mb-4">
-            Aims of Education
-          </h2>
-          <p className="text-gray-700">
-            Derived from the overall vision of education, they outline the
-            desired outcomes for students.
-          </p>
-        </div>
-
-        {/* Curricular Goals */}
-        <div className="bg-green-50 p-6 rounded-lg border border-green-200 shadow-md">
-          <h2 className="text-2xl font-semibold text-green-700 mb-4">
-            Curricular Goals
-          </h2>
-          <p className="text-gray-700">
-            Specify the knowledge, skills, and values to be achieved within
-            specific subject areas or domains.
-          </p>
-        </div>
-
-        {/* Competencies */}
-        <div className="bg-green-50 p-6 rounded-lg border border-green-200 shadow-md">
-          <h2 className="text-2xl font-semibold text-green-700 mb-4">
-            Competencies
-          </h2>
-          <p className="text-gray-700">
-            Define the capabilities students should develop to meet curricular
-            goals.
-          </p>
-        </div>
-
-        {/* Learning Outcomes */}
-        <div className="bg-green-50 p-6 rounded-lg border border-green-200 shadow-md">
-          <h2 className="text-2xl font-semibold text-green-700 mb-4">
-            Learning Outcomes
-          </h2>
-          <p className="text-gray-700">
-            Clearly articulate the specific knowledge, skills, and behaviors
-            students should demonstrate.
-          </p>
-        </div>
-      </div>
-
-      {/* Summary */}
-      <div className="text-center mt-6">
-        <p className="text-lg text-gray-800">
-          This hierarchical structure ensures that all components of the
-          curriculum contribute to the overarching goals of education.
-        </p>
-      </div>
-    </div>
-  ),
   box3: (
     <div className="p-2">
       <h1 className="text-4xl font-extrabold text-center mb-4 text-teal-900">
@@ -454,46 +351,6 @@ const Approach3 = () => {
 
   return (
     <div className="p-8 bg-gradient-to-b from-blue-100 to-blue-100 min-h-screen">
-      {/* Existing Heading */}
-      <h1 className="text-5xl font-extrabold text-center mb-12 text-green-800">
-        Approach to Learning Standards
-      </h1>
-
-      {/* Existing Boxes */}
-      <div className="flex flex-wrap justify-center gap-8 mb-12">
-        {/* Box 1 */}
-        <div
-          className="w-80 h-80 flex items-center justify-center cursor-pointer transition-transform duration-300 ease-in-out"
-          onClick={() => setSelectedBox("box1")}
-        >
-          <div className="text-center p-8 bg-gradient-to-r from-teal-50 to-teal-100 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300">
-            <div className="text-lg font-semibold text-teal-800 mb-3">
-              Approach to Learning Standards
-            </div>
-            <div className="text-sm text-gray-600">
-              Click to explore the details and learn more about our approach to
-              learning standards.
-            </div>
-          </div>
-        </div>
-
-        {/* Box 2 */}
-        <div
-          className="w-80 h-80 flex items-center justify-center cursor-pointer transition-transform duration-300 ease-in-out"
-          onClick={() => setSelectedBox("box2")}
-        >
-          <div className="text-center p-8 bg-gradient-to-r from-teal-50 to-teal-100 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300">
-            <div className="text-lg font-semibold text-teal-800 mb-3">
-              From Aims to Learning Outcomes
-            </div>
-            <div className="text-sm text-gray-600">
-              Click to explore the details and learn more about our approach to
-              learning outcomes.
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* New Heading */}
       <h2 className="text-4xl font-extrabold text-center mb-12 text-green-800">
         Approach to Pedagogy{" "}
@@ -573,8 +430,6 @@ const Approach3 = () => {
           </div>
         </div>
       )}
-
-      <AppLS />
     </div>
   );
 };

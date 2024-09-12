@@ -34,6 +34,9 @@ import Assess0 from "./Approach4/Assess0";
 import Time1 from "./Approach4/time1";
 import Time2 from "./Approach4/time2";
 import Foundationtime from "./Approach4/Foundationtime";
+import Prepratorytime from "./Approach4/Prepratorytime";
+import Middletime from "./Approach4/Middletime";
+import Secondarytime from "./Approach4/Secondarytime";
 
 function App() {
   return (
@@ -79,6 +82,9 @@ function App() {
         <Route path="/time1" element={<Time1 />} />
         <Route path="/time2" element={<Time2 />} />
         <Route path="/foundation-time" element={<Foundationtime />} />
+        <Route path="/prepatory-time" element={<Prepratorytime />} />
+        <Route path="/middle-time" element={<Middletime />} />
+        <Route path="/secondary-time" element={<Secondarytime />} />
 
         {/* <Route path="/approach" element={<Approach />} /> */}
         <Route path="/sectione" element={<CardsPage />} />

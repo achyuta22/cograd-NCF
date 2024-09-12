@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ArrowRightOutlined, ReloadOutlined } from "@ant-design/icons"; // Ant Design icons
 
 const options = [
   { id: 1, text: "1975", isCorrect: true },
@@ -27,23 +28,24 @@ const QuizPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 p-6 flex flex-col items-center min-h-screen">
+    <div className="bg-gradient-to-br from-teal-100 via-teal-200 to-teal-300 p-4 sm:p-8 flex flex-col items-center min-h-screen">
       {/* Main content area */}
-      <div className="flex-grow flex flex-col items-center w-full max-w-lg">
-        <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-800 mb-6 text-center">
-          Select Years in which various NFCs were formed in India
+      <div className="flex-grow flex flex-col items-center w-full max-w-lg sm:max-w-2xl">
+        <h1 className="text-2xl sm:text-4xl font-extrabold text-teal-800 mb-6 sm:mb-10 text-center">
+          Select NCF Formation Years in India
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 w-full">
           {options.map((option) => (
             <button
               key={option.id}
               onClick={() => handleClick(option.id)}
-              className={`p-3 sm:p-4 rounded-lg border-2 shadow-md hover:shadow-xl transition-transform transform ${
+              className={`p-4 sm:p-5 rounded-lg border-2 shadow-lg transition-all duration-300 transform hover:shadow-2xl hover:scale-105 ${
                 selected.includes(option.id)
                   ? option.isCorrect
-                    ? "bg-green-500 border-green-700 text-white scale-105"
-                    : "bg-red-500 border-red-700 text-white scale-105"
-                  : "bg-white border-gray-300 text-gray-800 hover:bg-gray-100"
+                    ? "bg-teal-500 border-teal-700 text-white"
+                    : "bg-red-500 border-red-700 text-white"
+                  : "bg-white border-teal-200 text-teal-900 hover:bg-teal-50"
               }`}
             >
               {option.text}
@@ -53,18 +55,20 @@ const QuizPage = () => {
       </div>
 
       {/* Footer area with fixed buttons */}
-      <div className="w-full fixed bottom-0 py-4 shadow-lg">
-        <div className="flex justify-between w-full max-w-lg mx-auto px-4">
+      <div className="w-full fixed bottom-0 py-4 sm:py-5 bg-white shadow-lg">
+        <div className="flex justify-between w-full max-w-lg sm:max-w-2xl mx-auto px-4">
           <button
             onClick={() => navigate("/table")}
-            className="flex-1 bg-blue-600 text-white py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors transform hover:scale-105"
+            className="flex-1 bg-teal-600 text-white py-2 sm:py-3 rounded-lg shadow-md hover:bg-teal-700 transition-transform transform hover:scale-105 flex items-center justify-center"
           >
+            <ReloadOutlined className="mr-2" />
             Revise
           </button>
           <button
             onClick={handleNextPage}
-            className="flex-1 bg-green-600 text-white py-3 rounded-lg shadow-md hover:bg-green-700 transition-colors transform hover:scale-105 ml-4"
+            className="flex-1 bg-teal-600 text-white py-2 sm:py-3 rounded-lg shadow-md hover:bg-teal-700 transition-transform transform hover:scale-105 flex items-center justify-center ml-2 sm:ml-4"
           >
+            <ArrowRightOutlined className="mr-2" />
             Next Page
           </button>
         </div>
