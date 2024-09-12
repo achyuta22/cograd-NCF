@@ -117,8 +117,8 @@ const Learning1 = () => {
     setSelectedBox(null);
   };
   return (
-    <div className="p-8 bg-gray-50 min-h-screen">
-      <h1 className="text-4xl font-extrabold text-center mb-12 text-green-900">
+    <div className="p-8 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 min-h-screen">
+      <h1 className="text-4xl font-extrabold text-center mb-12 text-teal-900">
         Approach to Learning Standards
       </h1>
 
@@ -129,7 +129,7 @@ const Learning1 = () => {
           onClick={() => setSelectedBox("box1")}
         >
           <div className="w-full h-full flex items-center justify-center">
-            <div className="text-center p-6 bg-white rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+            <div className="text-center p-6 bg-white rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl border border-teal-200">
               <div className="text-lg font-semibold text-teal-800 mb-4">
                 Approach to Learning Standards
               </div>
@@ -147,7 +147,7 @@ const Learning1 = () => {
           onClick={() => setSelectedBox("box2")}
         >
           <div className="w-full h-full flex items-center justify-center">
-            <div className="text-center p-6 bg-white rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+            <div className="text-center p-6 bg-white rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl border border-teal-200">
               <div className="text-lg font-semibold text-teal-800 mb-4">
                 From Aims to Learning Outcomes
               </div>
@@ -162,14 +162,14 @@ const Learning1 = () => {
 
       {selectedBox && (
         <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative bg-white p-8 border border-gray-300 rounded-lg shadow-xl max-w-lg w-full mx-4 sm:mx-auto overflow-auto max-h-[90vh]">
+          <div className="relative bg-white p-8 border border-gray-300 rounded-lg shadow-xl max-w-lg w-full mx-4 sm:mx-auto overflow-auto max-h-[80vh]">
             <button
               className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-3xl font-bold transition-transform transform hover:scale-110"
               onClick={closeData}
             >
               &times;
             </button>
-            <div className="text-gray-800">{boxData[selectedBox]}</div>
+            <div className="text-gray-800 text-lg">{boxData[selectedBox]}</div>
           </div>
         </div>
       )}

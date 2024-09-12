@@ -10,8 +10,6 @@ import UserPage from "./opening/User";
 import HistoryPage from "./opening/History";
 import CardsPage from "./opening/sectione";
 import Sectione1 from "./opening/sectione1";
-import Approach2 from "./components/Approach2";
-import Approach3 from "./components/Approach3";
 import Historytable from "./opening/Historytable";
 import Slide1 from "./Approach1/Slide1";
 import Slide2 from "./Approach1/Slide2";
@@ -32,6 +30,11 @@ import Foundation from "./Approach4/Foundation";
 import Prepratory from "./Approach4/Prepratory";
 import Middle from "./Approach4/Middle";
 import Secondary from "./Approach4/Secondary";
+import Assess0 from "./Approach4/Assess0";
+import Time1 from "./Approach4/time1";
+import Time2 from "./Approach4/time2";
+import Foundationtime from "./Approach4/Foundationtime";
+
 function App() {
   return (
     <Router>
@@ -66,13 +69,16 @@ function App() {
         <Route path="/approach-learning" element={<Learning1 />} />
         <Route path="/learning2" element={<Learning2 />} />
         {/* Approach Chapter4*/}
-
-        <Route path="/approach-assessment" element={<Assess1 />} />
+        <Route path="/approach-assessment" element={<Assess0 />} />
+        <Route path="/assess1" element={<Assess1 />} />
         <Route path="/assess2" element={<Assess2 />} />
         <Route path="/foundation" element={<Foundation />} />
         <Route path="/prepatory" element={<Prepratory />} />
         <Route path="/middle" element={<Middle />} />
         <Route path="/secondary" element={<Secondary />} />
+        <Route path="/time1" element={<Time1 />} />
+        <Route path="/time2" element={<Time2 />} />
+        <Route path="/foundation-time" element={<Foundationtime />} />
 
         {/* <Route path="/approach" element={<Approach />} /> */}
         <Route path="/sectione" element={<CardsPage />} />

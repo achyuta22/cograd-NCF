@@ -357,90 +357,54 @@ const Learning2 = () => {
   return (
     <div className="p-4 bg-gradient-to-b from-blue-50 to-blue-100 min-h-screen">
       {/* New Heading */}
-      <h2 className="text-3xl font-extrabold text-center mb-8 text-green-800">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 text-green-800">
         Approach to Pedagogy
       </h2>
 
       {/* New Boxes */}
-      <div className="flex flex-wrap justify-center gap-6 mb-8">
-        {/* Box 3 */}
-        <div
-          className="w-full h-24 p-2 bg-green-200 shadow-md rounded-2xl flex items-center justify-center cursor-pointer hover:bg-green-300 transition-transform transform hover:scale-105 hover:shadow-lg"
-          onClick={() => setSelectedBox("box3")}
-        >
-          <div className="text-center text-lg font-bold text-green-900">
-            How does a teacher help in attaining the aims of education?
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 px-4">
+        {/* Box Template */}
+        {[
+          "How does a teacher help in attaining the aims of education?",
+          "What elements do effective pedagogy consist of?",
+          "What is good lesson planning?",
+          "What homework should be given to learners?",
+          "How should students be handled in the classroom?",
+          "How should a teacher cater to individual needs of learners?",
+        ].map((question, index) => (
+          <div
+            key={index}
+            className="w-full h-28 p-3 bg-green-200 shadow-md rounded-2xl flex items-center justify-center cursor-pointer hover:bg-green-300 transition-transform transform hover:scale-105 hover:shadow-lg"
+            onClick={() => setSelectedBox(`box${index + 3}`)}
+          >
+            <div className="text-center text-lg font-bold text-green-900">
+              {question}
+            </div>
           </div>
-        </div>
-
-        {/* Box 4 */}
-        <div
-          className="w-full h-24 p-2 bg-green-200 shadow-md rounded-2xl flex items-center justify-center cursor-pointer hover:bg-green-300 transition-transform transform hover:scale-105 hover:shadow-lg"
-          onClick={() => setSelectedBox("box4")}
-        >
-          <div className="text-center text-lg font-bold text-green-900">
-            What elements do effective pedagogy consist of?
-          </div>
-        </div>
-
-        {/* Box 5 */}
-        <div
-          className="w-full h-24 p-2 bg-green-200 shadow-md rounded-2xl flex items-center justify-center cursor-pointer hover:bg-green-300 transition-transform transform hover:scale-105 hover:shadow-lg"
-          onClick={() => setSelectedBox("box5")}
-        >
-          <div className="text-center text-lg font-bold text-green-900">
-            What is good lesson planning?
-          </div>
-        </div>
-
-        {/* Box 6 */}
-        <div
-          className="w-full h-24 p-2 bg-green-200 shadow-md rounded-2xl flex items-center justify-center cursor-pointer hover:bg-green-300 transition-transform transform hover:scale-105 hover:shadow-lg"
-          onClick={() => setSelectedBox("box6")}
-        >
-          <div className="text-center text-lg font-bold text-green-900">
-            What homework should be given to learners?
-          </div>
-        </div>
-
-        {/* Box 7 */}
-        <div
-          className="w-full h-24 p-2 bg-green-200 shadow-md rounded-2xl flex items-center justify-center cursor-pointer hover:bg-green-300 transition-transform transform hover:scale-105 hover:shadow-lg"
-          onClick={() => setSelectedBox("box7")}
-        >
-          <div className="text-center text-lg font-bold text-green-900">
-            How should students be handled in the classroom?
-          </div>
-        </div>
-
-        {/* Box 8 */}
-        <div
-          className="w-full h-24 p-2 bg-green-200 shadow-md rounded-2xl flex items-center justify-center cursor-pointer hover:bg-green-300 transition-transform transform hover:scale-105 hover:shadow-lg"
-          onClick={() => setSelectedBox("box8")}
-        >
-          <div className="text-center text-lg font-bold text-green-900">
-            How should a teacher cater to individual needs of learners?
-          </div>
-        </div>
+        ))}
       </div>
 
-      {/* Display selected box data */}
+      {/* Modal for Displaying Selected Box Data */}
       {selectedBox && (
-        <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <div className="relative bg-white p-6 border border-gray-300 rounded-lg shadow-xl max-w-sm w-full mx-auto overflow-auto max-h-[80vh]">
+        <div className="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 p-4">
+          <div className="relative bg-white p-6 border border-gray-300 rounded-lg shadow-xl max-w-md w-full mx-auto overflow-auto max-h-[80vh]">
             <button
               className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl font-bold transition-transform transform hover:scale-110"
               onClick={closeData}
             >
               &times;
             </button>
-            <div className="text-gray-800 text-sm">{boxData[selectedBox]}</div>
+            <div className="text-gray-800 text-base">
+              {boxData[selectedBox]}
+            </div>
           </div>
         </div>
       )}
+
+      {/* Next Chapter Button */}
       <button
         onClick={handleNextChapter}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300"
       >
         Next Chapter
       </button>
