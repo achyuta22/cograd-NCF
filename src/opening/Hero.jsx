@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Ensure react-router-dom is installed
-import NcfeImage from "../images/mcf-image.png"; // Check this path
-import HistoryPage from "./History"; // Ensure this component exists and is correctly imported
+import { Link } from "react-router-dom";
+import NcfeImage from "../images/mcf-image.png";
 
 const Hero = () => {
   return (
@@ -50,9 +49,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Check if HistoryPage component exists */}
-      {/* {HistoryPage && <HistoryPage />} */}
     </section>
   );
 };
