@@ -49,7 +49,6 @@ function App() {
         <Route path="/approach" element={<Approach />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/history" element={<HistoryPage />} />
-        <Route path="/" element={<Hero />} />
         <Route path="/school-subjects" element={<SchoolSubjects />} />
         <Route path="/years" element={<QuizPage />} />
 
@@ -68,7 +67,6 @@ function App() {
         <Route path="/stage4" element={<Stage4 />} />
         <Route path="/stage5" element={<Stages5 />} />
         {/* Approach Chapter3*/}
-
         <Route path="/approach-learning" element={<Learning1 />} />
         <Route path="/learning2" element={<Learning2 />} />
         {/* Approach Chapter4*/}
@@ -86,7 +84,6 @@ function App() {
         <Route path="/middle-time" element={<Middletime />} />
         <Route path="/secondary-time" element={<Secondarytime />} />
 
-        {/* <Route path="/approach" element={<Approach />} /> */}
         <Route path="/sectione" element={<CardsPage />} />
         <Route path="/sectione1" element={<Sectione1 />} />
       </Routes>
