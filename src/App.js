@@ -51,6 +51,8 @@ import InServiceEducationPage from "./sectione4-inservice";
 import PreServiceEducationPage from "./sectione4-preservice";
 import HeadTeachersAndPrincipalsPage from "./sectione4-headTeachers";
 import AcademicAndAdministrativeFunctionariesPage from "./sectione4-Academic";
+import Cultureschool from "./opening/Cultureschool";
+import Cultureprocess from "./opening/Cultureprocess";
 function App() {
   return (
     <Router>
@@ -59,6 +61,8 @@ function App() {
         <Route path="/cct" element={<CCT />} />
         <Route path="/table" element={<Historytable />} />
         <Route path="/culture" element={<Culture />} />
+        <Route path="/school-culture" element={<Cultureschool />} />
+        <Route path="/school-process" element={<Cultureprocess />} />
         <Route path="/approach" element={<Approach />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/history" element={<HistoryPage />} />
@@ -99,20 +103,53 @@ function App() {
 
         <Route path="/sectione" element={<CardsPage />} />
         <Route path="/sectione1" element={<Sectione1 />} />
-        <Route path="/sectione1-implementation" element={<Sectione1mplementationPage />} />
+        <Route
+          path="/sectione1-implementation"
+          element={<Sectione1mplementationPage />}
+        />
         <Route path="/sectione2-approach" element={<CapacityBuildingPage />} />
-        <Route path="/sectione2-subjects" element={<CapacityBuildingSubjectsPage />} />
-        <Route path="/sectione3-infrastructure" element={<InfrastructurePage />} />
+        <Route
+          path="/sectione2-subjects"
+          element={<CapacityBuildingSubjectsPage />}
+        />
+        <Route
+          path="/sectione3-infrastructure"
+          element={<InfrastructurePage />}
+        />
         <Route path="/sectione3-safety" element={<SafetyAndInclusionPage />} />
         <Route path="/sectione4-teacher" element={<TeacherEmpowermentPage />} />
-        <Route path="/sectione4-environment" element={<EnablingEnvironmentPage />} />
-        <Route path="/sectione4-teacherautonomy" element={<TeacherAutonomyAndAccountabilityPage/>} />
-        <Route path="/sectione4-pupilTeacher" element={<PupilTeacherRatioPage /> }/>
-        <Route path="/sectione4-career" element={<CareerAndProfessionalDevelopmentPage/>}/>
-<Route path="/sectione4-inservice" element={<InServiceEducationPage/> }/>
-<Route path="/sectione4-preservice" element={<PreServiceEducationPage/> }/>
- <Route path="/sectione4-headTeachers" element={<HeadTeachersAndPrincipalsPage/>} />
- <Route path="/sectione4-academic" element={<AcademicAndAdministrativeFunctionariesPage/>}/>
+        <Route
+          path="/sectione4-environment"
+          element={<EnablingEnvironmentPage />}
+        />
+        <Route
+          path="/sectione4-teacherautonomy"
+          element={<TeacherAutonomyAndAccountabilityPage />}
+        />
+        <Route
+          path="/sectione4-pupilTeacher"
+          element={<PupilTeacherRatioPage />}
+        />
+        <Route
+          path="/sectione4-career"
+          element={<CareerAndProfessionalDevelopmentPage />}
+        />
+        <Route
+          path="/sectione4-inservice"
+          element={<InServiceEducationPage />}
+        />
+        <Route
+          path="/sectione4-preservice"
+          element={<PreServiceEducationPage />}
+        />
+        <Route
+          path="/sectione4-headTeachers"
+          element={<HeadTeachersAndPrincipalsPage />}
+        />
+        <Route
+          path="/sectione4-academic"
+          element={<AcademicAndAdministrativeFunctionariesPage />}
+        />
       </Routes>
     </Router>
   );
