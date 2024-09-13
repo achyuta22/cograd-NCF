@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
+import headImage from "../images/Screenshot_2024_0817_072815.png";
 const Card = ({ title, description, image, keywords, onKeywordClick }) => {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden w-full">
       <img className="w-full h-48 object-cover" src={image} alt={title} />
       <div className="p-4">
         <h2 className="text-2xl font-bold mb-4">{title}</h2>
-        <p className="text-gray-600 mb-4">{description}</p>
+        {/* <p className="text-gray-600 mb-4">{description}</p> */}
         <div className="flex flex-wrap gap-2 mb-4">
           {keywords.map((keyword, index) => (
             <button
@@ -45,7 +45,10 @@ const Modal = ({ isOpen, onClose, keyword }) => {
 
 const CardsPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedKeyword, setSelectedKeyword] = useState({ name: '', description: '' });
+  const [selectedKeyword, setSelectedKeyword] = useState({
+    name: "",
+    description: "",
+  });
 
   const handleKeywordClick = (keyword) => {
     setSelectedKeyword(keyword);
@@ -54,58 +57,116 @@ const CardsPage = () => {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    setSelectedKeyword({ name: '', description: '' });
+    setSelectedKeyword({ name: "", description: "" });
   };
 
   const cardsData = [
     {
-      title: "Chapter1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "https://via.placeholder.com/150",
+      title: "Capacity building for implementation",
+      description: "Capacity building for implementation",
+      image: headImage,
       keywords: [
-        { name: "React", description: "A JavaScript library for building user interfaces." },
-        { name: "Tailwind", description: "A utility-first CSS framework for creating custom designs." },
-        { name: "JavaScript", description: "A programming language for web development." }
+        {
+          name: "Overview",
+          description:
+            "The chapter discuss the steps necessary for implementing framework emphasizing the importance of developing capacity among various stkeholders to ensure succesful execution",
+        },
+        {
+          name: "Implementation",
+          description:
+            "Implementation Overview Implementation Steps: The NCF implementation involves several stages, including the development of State Curriculum Frameworks (SCFs) and other relevant frameworks, the creation of syllabi, textbooks, and other educational materials. Curriculum Framework (CF) will be used as a general term to refer to these frameworks.Curricular Literacy: Understanding the curriculum framework is essential for all stakeholders, including those in public and private schools, academic support structures, and teacher education institutions. This literacy is critical for the effective implementation of the NCF.",
+        },
+        {
+          name: "Curriculum",
+          description: "Curriculum Framework Literacy for All Stakeholders Stakeholders Involved: Key stakeholders include teachers, head teachers, principals, syllabus developers, and TLM (Teaching-Learning Material) developers. Additionally, all personnel in academic and administrative support structures, as well as Teacher Education institutions, should understand and support the CFs. Parents and community members must also be curriculum literate to understand the changes in curriculum and processes. Components of Curriculum Framework Literacy: Understanding the CF: Stakeholders must comprehend the approaches and principles of the CF to achieve educational aims, the key curricular changes, the roles and responsibilities of each stakeholder, and the importance of these components.Orientation to the Relevant Curriculum Framework: SCERT or other relevant bodies will design and develop modules for this program, to be implemented by DIETs. An intensive 2-3 day orientation program should be designed for each stakeholder group, focusing on the specific aspects of the CF relevant to their roles.Specialized Capacity Building: Academic functionaries specializing in areas like Art Education, Vocational Education, Physical Education, and Interdisciplinary Areas must undergo an intensive face-to-face capacity-building program annually for 2-3 years after CF implementation, with at least six days of face-to-face interaction and pre-scheduled online sessions.",
+        },
       ],
     },
     {
-      title: "Chapter2",
-      description: "Consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "https://via.placeholder.com/150",
+      title: "Capacity building for Teachers",
+      description: "Capacity building for Teachers",
+      image: headImage,
       keywords: [
-        { name: "HTML", description: "The standard markup language for creating web pages." },
-        { name: "CSS", description: "A style sheet language used for describing the presentation of a document." },
-        { name: "Design", description: "The process of creating visual content to communicate messages." }
+        {
+          name: "HTML",
+          description: "The standard markup language for creating web pages.",
+        },
+        {
+          name: "CSS",
+          description:
+            "A style sheet language used for describing the presentation of a document.",
+        },
+        {
+          name: "Design",
+          description:
+            "The process of creating visual content to communicate messages.",
+        },
       ],
     },
     {
-      title: "Chapter3",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      image: "https://via.placeholder.com/150",
+      title: "Ensuring an Appropriate Environment for Learning",
+      description: "Ensuring an Appropriate Environment for Learning",
+      image: headImage,
       keywords: [
-        { name: "Node.js", description: "A JavaScript runtime built on Chrome's V8 JavaScript engine." },
-        { name: "Express", description: "A minimal and flexible Node.js web application framework." },
-        { name: "API", description: "A set of functions and procedures allowing the creation of applications." }
+        {
+          name: "Node.js",
+          description:
+            "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
+        },
+        {
+          name: "Express",
+          description:
+            "A minimal and flexible Node.js web application framework.",
+        },
+        {
+          name: "API",
+          description:
+            "A set of functions and procedures allowing the creation of applications.",
+        },
       ],
     },
     {
-      title: "Chapter4",
-      description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      image: "https://via.placeholder.com/150",
+      title: "Enabling and Empowering Teachers",
+      description: "Enabling and Empowering Teachers",
+      image: headImage,
       keywords: [
-        { name: "MongoDB", description: "A NoSQL database that uses a document-oriented data model." },
-        { name: "Database", description: "An organized collection of structured information or data." },
-        { name: "NoSQL", description: "A database model that provides a mechanism for storage and retrieval of data." }
+        {
+          name: "MongoDB",
+          description:
+            "A NoSQL database that uses a document-oriented data model.",
+        },
+        {
+          name: "Database",
+          description:
+            "An organized collection of structured information or data.",
+        },
+        {
+          name: "NoSQL",
+          description:
+            "A database model that provides a mechanism for storage and retrieval of data.",
+        },
       ],
     },
     {
-      title: "Chapter5",
-      description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      image: "https://via.placeholder.com/150",
+      title: "Community and family Engagement",
+      description: "Community and family Engagement",
+      image: headImage,
       keywords: [
-        { name: "Cloud", description: "A model for delivering information technology services over the internet." },
-        { name: "Deployment", description: "The process of making a software application available for use." },
-        { name: "DevOps", description: "A set of practices that combines software development and IT operations." }
+        {
+          name: "Cloud",
+          description:
+            "A model for delivering information technology services over the internet.",
+        },
+        {
+          name: "Deployment",
+          description:
+            "The process of making a software application available for use.",
+        },
+        {
+          name: "DevOps",
+          description:
+            "A set of practices that combines software development and IT operations.",
+        },
       ],
     },
   ];
@@ -114,8 +175,14 @@ const CardsPage = () => {
     <div className="bg-gray-100 min-h-screen">
       <div className="container mx-auto p-4">
         {/* Heading Section with Background Image */}
-        <div className="bg-[url('https://via.placeholder.com/1200')] bg-cover bg-center h-48 flex items-center justify-center mb-8">
-          <h1 className="text-3xl font-bold text-white">Supportive Ecosystem</h1>
+        <div
+          className="bg-cover bg-center h-48 flex items-center justify-center mb-8"
+          style={{ backgroundImage: `url(${headImage})` }}
+        >
+          {" "}
+          <h1 className="text-3xl font-bold text-white">
+            Supportive Ecosystem
+          </h1>
         </div>
 
         {/* Card Grid */}

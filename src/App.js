@@ -37,7 +37,20 @@ import Foundationtime from "./Approach4/Foundationtime";
 import Prepratorytime from "./Approach4/Prepratorytime";
 import Middletime from "./Approach4/Middletime";
 import Secondarytime from "./Approach4/Secondarytime";
-
+import Sectione1mplementationPage from "./opening/sectione1Implementation";
+import CapacityBuildingPage from "./opening/sectione2Capacity";
+import CapacityBuildingSubjectsPage from "./opening/sectione2Subject";
+import InfrastructurePage from "./opening/sectione3-Infrastructurepage";
+import SafetyAndInclusionPage from "./sectione3-Safety";
+import TeacherEmpowermentPage from "./sectione4-teacherEmpowerment";
+import EnablingEnvironmentPage from "./sectione4-enablingenvironment";
+import TeacherAutonomyAndAccountabilityPage from "./sectione4-teacherautonomy";
+import PupilTeacherRatioPage from "./sectione4-pupilTeacherRatio";
+import CareerAndProfessionalDevelopmentPage from "./sectione4-carrer";
+import InServiceEducationPage from "./sectione4-inservice";
+import PreServiceEducationPage from "./sectione4-preservice";
+import HeadTeachersAndPrincipalsPage from "./sectione4-headTeachers";
+import AcademicAndAdministrativeFunctionariesPage from "./sectione4-Academic";
 function App() {
   return (
     <Router>
@@ -86,6 +99,20 @@ function App() {
 
         <Route path="/sectione" element={<CardsPage />} />
         <Route path="/sectione1" element={<Sectione1 />} />
+        <Route path="/sectione1-implementation" element={<Sectione1mplementationPage />} />
+        <Route path="/sectione2-approach" element={<CapacityBuildingPage />} />
+        <Route path="/sectione2-subjects" element={<CapacityBuildingSubjectsPage />} />
+        <Route path="/sectione3-infrastructure" element={<InfrastructurePage />} />
+        <Route path="/sectione3-safety" element={<SafetyAndInclusionPage />} />
+        <Route path="/sectione4-teacher" element={<TeacherEmpowermentPage />} />
+        <Route path="/sectione4-environment" element={<EnablingEnvironmentPage />} />
+        <Route path="/sectione4-teacherautonomy" element={<TeacherAutonomyAndAccountabilityPage/>} />
+        <Route path="/sectione4-pupilTeacher" element={<PupilTeacherRatioPage /> }/>
+        <Route path="/sectione4-career" element={<CareerAndProfessionalDevelopmentPage/>}/>
+<Route path="/sectione4-inservice" element={<InServiceEducationPage/> }/>
+<Route path="/sectione4-preservice" element={<PreServiceEducationPage/> }/>
+ <Route path="/sectione4-headTeachers" element={<HeadTeachersAndPrincipalsPage/>} />
+ <Route path="/sectione4-academic" element={<AcademicAndAdministrativeFunctionariesPage/>}/>
       </Routes>
     </Router>
   );
