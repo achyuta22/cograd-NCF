@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CCT from "./opening/CCT";
 import Culture from "./opening/Culture";
 import Hero from "./opening/Hero";
-import SchoolSubjects from "./opening/schoolSubjects";
+import SchoolSubjects from "./sectionc/schoolSubjects";
 import QuizPage from "./opening/Years";
 import Approach from "./opening/Approach";
 import UserPage from "./opening/User";
@@ -51,6 +51,14 @@ import InServiceEducationPage from "./sectione4-inservice";
 import PreServiceEducationPage from "./sectione4-preservice";
 import HeadTeachersAndPrincipalsPage from "./sectione4-headTeachers";
 import AcademicAndAdministrativeFunctionariesPage from "./sectione4-Academic";
+
+// new
+import SchoolSubjectQuiz from "./sectionc/SchoolSubjectsQuiz";
+import MainAspects from "./sectionc/mainAspects";
+import KeyAspects from "./sectionc/keyAspects";
+
+//sectione
+import PageWithCards from "./sectione/card";
 import Cultureschool from "./opening/Cultureschool";
 import Cultureprocess from "./opening/Cultureprocess";
 function App() {
@@ -150,6 +158,14 @@ function App() {
           path="/sectione4-academic"
           element={<AcademicAndAdministrativeFunctionariesPage />}
         />
+
+        {/* chapter c */}
+        <Route path="/schoolSubjectQuiz" element={<SchoolSubjectQuiz />} />
+        <Route path="/mainAspects" element={<MainAspects/>}/>
+        <Route path="/keyAspects" element={<KeyAspects/>}/>
+
+        {/* sectione */}
+        <Route path="/pageswithcards" element={<PageWithCards/>}/>
       </Routes>
     </Router>
   );

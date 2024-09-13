@@ -40,9 +40,7 @@ const InfrastructurePage = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="bg-blue-600 text-white text-center py-4 w-full mt-8">
-        <p className="text-lg">Creating a safe and inclusive environment for effective learning.</p>
-      </div>
+     
     </div>
   );
 };
