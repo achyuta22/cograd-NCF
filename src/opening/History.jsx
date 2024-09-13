@@ -22,8 +22,7 @@ const HistoryPage = () => {
             An Overview of the NCF Structure and its Components
           </p>
           <div>
-            <img src={his1} alt=""
-            className="w-full h-96 mt-4"/>
+            <img src={his1} alt="" className="w-full h-96 mt-4" />
           </div>
         </div>
       </header>
