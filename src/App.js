@@ -59,6 +59,8 @@ import KeyAspects from "./sectionc/keyAspects";
 
 //sectione
 import PageWithCards from "./sectione/card";
+import Cultureschool from "./opening/Cultureschool";
+import Cultureprocess from "./opening/Cultureprocess";
 function App() {
   return (
     <Router>
@@ -67,6 +69,8 @@ function App() {
         <Route path="/cct" element={<CCT />} />
         <Route path="/table" element={<Historytable />} />
         <Route path="/culture" element={<Culture />} />
+        <Route path="/school-culture" element={<Cultureschool />} />
+        <Route path="/school-process" element={<Cultureprocess />} />
         <Route path="/approach" element={<Approach />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/history" element={<HistoryPage />} />
