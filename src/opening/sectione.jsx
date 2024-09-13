@@ -6,7 +6,7 @@ const Card = ({ title, description, image, keywords, onKeywordClick }) => {
       <img className="w-full h-48 object-cover" src={image} alt={title} />
       <div className="p-4">
         <h2 className="text-2xl font-bold mb-4">{title}</h2>
-        <p className="text-gray-600 mb-4">{description}</p>
+        {/* <p className="text-gray-600 mb-4">{description}</p> */}
         <div className="flex flex-wrap gap-2 mb-4">
           {keywords.map((keyword, index) => (
             <button
