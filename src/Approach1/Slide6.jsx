@@ -320,8 +320,8 @@ const Slide6 = () => {
   const { question, answer } = renderCardContent();
   const navigate = useNavigate();
 
-  const handleNextChapter = () => {
-    navigate("/approach-stage");
+  const handleNextPage = () => {
+    navigate("/curricular");
   };
 
   return (
@@ -413,10 +413,10 @@ const Slide6 = () => {
         )}
         <div className="flex justify-end items-end p-4">
           <button
-            onClick={handleNextChapter}
+            onClick={handleNextPage}
             className="bg-gradient-to-r from-teal-500 to-teal-700 text-white py-3 px-6 rounded-full shadow-md hover:from-teal-600 hover:to-teal-800 transition-transform duration-300"
           >
-            Next Chapter
+            Next Page
           </button>
         </div>
       </div>

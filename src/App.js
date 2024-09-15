@@ -61,6 +61,7 @@ import KeyAspects from "./sectionc/keyAspects";
 import PageWithCards from "./sectione/card";
 import Cultureschool from "./opening/Cultureschool";
 import Cultureprocess from "./opening/Cultureprocess";
+import Curricular from "./components/Curricular";
 function App() {
   return (
     <Router>
@@ -76,6 +77,7 @@ function App() {
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/school-subjects" element={<SchoolSubjects />} />
         <Route path="/years" element={<QuizPage />} />
+        <Route path="/curricular" element={<Curricular />} />
 
         {/* Approach Chapter1 */}
         <Route path="/approach-aim" element={<Slide1 />} />
@@ -161,11 +163,11 @@ function App() {
 
         {/* chapter c */}
         <Route path="/schoolSubjectQuiz" element={<SchoolSubjectQuiz />} />
-        <Route path="/mainAspects" element={<MainAspects/>}/>
-        <Route path="/keyAspects" element={<KeyAspects/>}/>
+        <Route path="/mainAspects" element={<MainAspects />} />
+        <Route path="/keyAspects" element={<KeyAspects />} />
 
         {/* sectione */}
-        <Route path="/pageswithcards" element={<PageWithCards/>}/>
+        <Route path="/pageswithcards" element={<PageWithCards />} />
       </Routes>
     </Router>
   );
