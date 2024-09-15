@@ -88,6 +88,7 @@ import PreServiceTeacherEducation from "./sectione/sectione3-preservice";
 import HeadTeachersQuiz from "./sectione/sectione3-headQuiz";
 import AcademicAndAdministrativeFunctionaries from "./sectione/sectione4-academicAdministrative";
 import CardsPageE from "./sectione/sectione4-cards";
+import Curricular from "./components/Curricular";
 function App() {
   return (
     <Router>
@@ -102,6 +103,7 @@ function App() {
         <Route path="/user" element={<UserPage />} />
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/years" element={<QuizPage />} />
+        <Route path="/curricular" element={<Curricular />} />
 
         {/* Approach Chapter1 */}
         <Route path="/approach-aim" element={<Slide1 />} />
@@ -189,8 +191,8 @@ function App() {
         <Route path="/school-subjects" element={<SchoolSubjects />} />
 
         <Route path="/schoolSubjectQuiz" element={<SchoolSubjectQuiz />} />
-        <Route path="/mainAspects" element={<MainAspects/>}/>
-        <Route path="/keyAspects" element={<KeyAspects/>}/>
+        <Route path="/mainAspects" element={<MainAspects />} />
+        <Route path="/keyAspects" element={<KeyAspects />} />
 
         {/* sectione */}
         <Route path="/pageswithcards" element={<PageWithCards/>}/>
@@ -218,6 +220,7 @@ function App() {
         <Route path="/headQuiz" element={<HeadTeachersQuiz/>} />
         <Route path="/academic" element={<AcademicAndAdministrativeFunctionaries/>}/>
         <Route path="/cards" element={<CardsPageE/>}/>
+        <Route path="/pageswithcards" element={<PageWithCards />} />
       </Routes>
     </Router>
   );

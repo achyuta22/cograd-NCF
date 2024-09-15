@@ -108,7 +108,7 @@ const Slide6 = () => {
       case "Capacities":
         return {
           question: (
-            <div className="max-w-full p-2 bg-white  mx-auto ">
+            <div className="max-w-full p-2 bg-white h-96 overflow-auto mx-auto">
               <h1 className="text-2xl font-extrabold mb-6 text-gray-900">
                 Rank the Capacities
               </h1>
@@ -154,7 +154,7 @@ const Slide6 = () => {
               </form>
 
               {showContent && (
-                <div className="max-w-full mt-6 bg-white rounded-lg shadow-lg border border-gray-200 p-6">
+                <div className="max-w-full mt-6 bg-white rounded-lg shadow-lg border border-gray-200 p-6 h-96 overflow-auto">
                   <h1 className="text-2xl font-bold mb-6 text-gray-800">
                     Capacities
                   </h1>
@@ -320,8 +320,8 @@ const Slide6 = () => {
   const { question, answer } = renderCardContent();
   const navigate = useNavigate();
 
-  const handleNextChapter = () => {
-    navigate("/approach-stage");
+  const handleNextPage = () => {
+    navigate("/curricular");
   };
 
   return (
@@ -413,10 +413,10 @@ const Slide6 = () => {
         )}
         <div className="flex justify-end items-end p-4">
           <button
-            onClick={handleNextChapter}
+            onClick={handleNextPage}
             className="bg-gradient-to-r from-teal-500 to-teal-700 text-white py-3 px-6 rounded-full shadow-md hover:from-teal-600 hover:to-teal-800 transition-transform duration-300"
           >
-            Next Chapter
+            Next Page
           </button>
         </div>
       </div>
