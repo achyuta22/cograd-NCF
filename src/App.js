@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CCT from "./opening/CCT";
 import Culture from "./opening/Culture";
 import Hero from "./opening/Hero";
-import SchoolSubjects from "./sectionc/schoolSubjects";
 import QuizPage from "./opening/Years";
 import Approach from "./opening/Approach";
 import UserPage from "./opening/User";
@@ -53,6 +52,8 @@ import HeadTeachersAndPrincipalsPage from "./sectione4-headTeachers";
 import AcademicAndAdministrativeFunctionariesPage from "./sectione4-Academic";
 
 // new
+import SchoolSubjects from "./sectionc/schoolSubjects";
+
 import SchoolSubjectQuiz from "./sectionc/SchoolSubjectsQuiz";
 import MainAspects from "./sectionc/mainAspects";
 import KeyAspects from "./sectionc/keyAspects";
@@ -61,6 +62,32 @@ import KeyAspects from "./sectionc/keyAspects";
 import PageWithCards from "./sectione/card";
 import Cultureschool from "./opening/Cultureschool";
 import Cultureprocess from "./opening/Cultureprocess";
+import Sectione1Cards from "./opening/sectione1";
+import ImplementationOverview from "./sectione/sectione1-implementationOverview";
+import StakeholderQuiz from "./sectione/sectione1-stakeholderquiz";
+import CurriculumFramework from "./sectione/sectione1-curriculumFrameWork";
+import CapacityBuildingCards from "./sectione/sectione1-overallCapacityBuilding";
+import SpecificSubjects from "./sectione/sectione1-specificSubjects";
+import CapacityBuildingQuiz from "./sectione1-capacityBuildingQuiz";
+import EnvironmentLearning from "./sectione/sectione2-environmntLearning";
+import OutdoorInfrastructure from "./sectione/sectione2-outdoor";
+import OutdoorInfrastructureReminderQuiz from "./sectione/sectione2-outdoorInfraQuiz";
+import IndoorInfrastructureQuiz from "./sectione/sectione2-insideInfraQuiz";
+import IndoorInfrastructurePage1 from "./sectione/sectione2-indoor1";
+import IndoorInfrastructurePart2 from "./sectione/sectione2-indoor2";
+import InfrastructureSafety from "./sectione/sectione2-safetyInfra";
+import EnablingEmpoweringTeachers from "./sectione/sectione3-opening";
+import EnablingEnvironmentForTeachers from "./sectione/sectione3-enablingEnvironment";
+import TeacherAutonomyAndAccountability from "./sectione/sectione3-teacherAutonomy";
+import PupilTeacherRatio from "./sectione/Ssectione3-ptr";
+// import CareerAndProfessionalDevelopmentPage from "./sectione4-carrer";
+
+import CareerDevelopment from "./sectione/sectione3-career";
+import InServiceTeacherEducation from "./sectione/sectione4-inservice";
+import PreServiceTeacherEducation from "./sectione/sectione3-preservice";
+import HeadTeachersQuiz from "./sectione/sectione3-headQuiz";
+import AcademicAndAdministrativeFunctionaries from "./sectione/sectione4-academicAdministrative";
+import CardsPageE from "./sectione/sectione4-cards";
 import Curricular from "./components/Curricular";
 function App() {
   return (
@@ -75,7 +102,6 @@ function App() {
         <Route path="/approach" element={<Approach />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/history" element={<HistoryPage />} />
-        <Route path="/school-subjects" element={<SchoolSubjects />} />
         <Route path="/years" element={<QuizPage />} />
         <Route path="/curricular" element={<Curricular />} />
 
@@ -112,7 +138,7 @@ function App() {
         <Route path="/secondary-time" element={<Secondarytime />} />
 
         <Route path="/sectione" element={<CardsPage />} />
-        <Route path="/sectione1" element={<Sectione1 />} />
+        {/* <Route path="/sectione1" element={<Sectione1 />} /> */}
         <Route
           path="/sectione1-implementation"
           element={<Sectione1mplementationPage />}
@@ -162,11 +188,38 @@ function App() {
         />
 
         {/* chapter c */}
+        <Route path="/school-subjects" element={<SchoolSubjects />} />
+
         <Route path="/schoolSubjectQuiz" element={<SchoolSubjectQuiz />} />
         <Route path="/mainAspects" element={<MainAspects />} />
         <Route path="/keyAspects" element={<KeyAspects />} />
 
         {/* sectione */}
+        <Route path="/pageswithcards" element={<PageWithCards/>}/>
+        {/* <Route path="/sectione1" element={<Sectione1Cards/>}/> */}
+        <Route path="/implementationOverview" element={<ImplementationOverview/>}/>
+        <Route path="/stakeholderQuiz" element={<StakeholderQuiz/>}/>
+        <Route path="/curriculumFramework" element={<CurriculumFramework/>}/>
+        <Route path="/capacityBuildingCards" element={<CapacityBuildingCards/>}/>
+        <Route path="/specificSubjects" element={<SpecificSubjects/>}/>
+        <Route path="/capacityBuildingQuiz" element={<CapacityBuildingQuiz/>}/>
+        <Route path="/environmentLearning" element={<EnvironmentLearning/>}/>
+        <Route path="/outdoorInfraQuiz" element={<OutdoorInfrastructureReminderQuiz/>}/>
+        <Route path="/outdoorInfrastructure" element={<OutdoorInfrastructure/>}/>
+        <Route path="/indoorInfraQuiz" element={<IndoorInfrastructureQuiz/>}/>
+        <Route path="/indoorInfrastructure1" element={<IndoorInfrastructurePage1/>}/>
+        <Route path="/indoorInfrastructure2" element={<IndoorInfrastructurePart2/>} />
+        <Route path="/safetyInfra" element={<InfrastructureSafety/>}/>
+        <Route path="/enablingEmpoweringTeachers" element={<EnablingEmpoweringTeachers/>}/>
+        <Route path="/enablingEmpoweringforTeachers" element={<EnablingEnvironmentForTeachers/>}/>
+        <Route path="/teacherAutonomy" element={<TeacherAutonomyAndAccountability/>}/>
+        <Route path="/ptr" element={<PupilTeacherRatio/>} />
+        <Route path="/career" element={<CareerDevelopment/>}/>
+        <Route path="/inservice" element={<InServiceTeacherEducation/>}/>
+        <Route path="/preservice" element={<PreServiceTeacherEducation/>}/>
+        <Route path="/headQuiz" element={<HeadTeachersQuiz/>} />
+        <Route path="/academic" element={<AcademicAndAdministrativeFunctionaries/>}/>
+        <Route path="/cards" element={<CardsPageE/>}/>
         <Route path="/pageswithcards" element={<PageWithCards />} />
       </Routes>
     </Router>

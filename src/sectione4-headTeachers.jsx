@@ -2,7 +2,7 @@ import React from "react";
 
 const HeadTeachersAndPrincipalsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-10">
+    <div className="min-h-screen bg-gray-100 py-0">
       {/* Header Section */}
       <div className="bg-blue-600 text-white text-center py-8 w-full">
         <h1 className="text-4xl font-bold">Head Teachers and School Principals</h1>
