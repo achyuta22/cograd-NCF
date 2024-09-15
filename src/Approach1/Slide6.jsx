@@ -108,7 +108,7 @@ const Slide6 = () => {
       case "Capacities":
         return {
           question: (
-            <div className="max-w-full p-2 bg-white  mx-auto ">
+            <div className="max-w-full p-2 bg-white h-96 overflow-auto mx-auto">
               <h1 className="text-2xl font-extrabold mb-6 text-gray-900">
                 Rank the Capacities
               </h1>
@@ -154,7 +154,7 @@ const Slide6 = () => {
               </form>
 
               {showContent && (
-                <div className="max-w-full mt-6 bg-white rounded-lg shadow-lg border border-gray-200 p-6">
+                <div className="max-w-full mt-6 bg-white rounded-lg shadow-lg border border-gray-200 p-6 h-96 overflow-auto">
                   <h1 className="text-2xl font-bold mb-6 text-gray-800">
                     Capacities
                   </h1>
