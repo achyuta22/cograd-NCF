@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import imagey from "../images/vision.png";
+// import imagey1 from "../images/vision.png";
+
+import imagey2 from "../images/Screenshot_2024_0817_072830.png";
+import imagey1 from "../images/Screenshot_2024_0817_072815.png";
+
 
 const SchoolSubjects = () => {
   return (
@@ -23,7 +28,7 @@ const SchoolSubjects = () => {
       <section className="p-1">
         <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-6 md:flex-row md:justify-center">
           {/* Main Aspects Card */}
-          <Link to="/mainAspects" className="relative bg-cover bg-center rounded-lg shadow-lg p-6 dark:bg-gray-800" style={{ backgroundImage: `url(${imagey})`, height: '250px', width: '350px' }}>
+          <Link to="/mainAspects" className="relative bg-cover bg-center rounded-lg shadow-lg p-6 dark:bg-gray-800" style={{ backgroundImage: `url(${imagey1})`, height: '250px', width: '350px' }}>
             <div className="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
             <div className="relative z-10 flex items-center justify-center h-full">
               <h2 className="text-2xl font-bold text-white text-center">Main Aspects of School Subjects</h2>
@@ -31,7 +36,7 @@ const SchoolSubjects = () => {
           </Link>
 
           {/* Key Aspects Card */}
-          <Link to="/keyAspects" className="relative bg-cover bg-center rounded-lg shadow-lg p-6 dark:bg-gray-800" style={{ backgroundImage: `url(${imagey})`, height: '250px', width: '350px' }}>
+          <Link to="/keyAspects" className="relative bg-cover bg-center rounded-lg shadow-lg p-6 dark:bg-gray-800" style={{ backgroundImage: `url(${imagey2})`, height: '250px', width: '350px' }}>
             <div className="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
             <div className="relative z-10 flex items-center justify-center h-full">
               <h2 className="text-2xl font-bold text-white text-center">Key Aspects of School Subjects</h2>

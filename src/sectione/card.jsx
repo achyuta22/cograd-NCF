@@ -6,7 +6,7 @@ import cardImage4 from '../images/Screenshot_2024_0817_073524.png';
 import cardImage5 from '../images/Screenshot_2024_0817_073537.png';
 
 const cards = [
-  { id: 1, title: "Capacity building for implementation", image: cardImage1 },
+  { id: 1, title: "Capacity building ", image: cardImage1 },
   { id: 3, title: "Ensuring an Appropriate Environment for Learning", image: cardImage3 },
   { id: 4, title: "Enabling and Empowering Teachers", image: cardImage4 },
   { id: 5, title: "Community and Family Engagement", image: cardImage5 },

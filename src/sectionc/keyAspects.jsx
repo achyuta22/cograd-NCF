@@ -1,7 +1,9 @@
 import React from 'react';
 import keyAspectsImage from '../images/vision.png'; // Update the path as needed
+import { useNavigate } from 'react-router-dom';
 
 const KeyAspects = () => {
+  const navigate = useNavigate();
   const aspects = [
     "Learning in the Foundational Stage",
     "Language Education",
@@ -49,7 +51,7 @@ const KeyAspects = () => {
 
         {/* Next Section Button */}
         <div className="flex justify-center mt-8">
-          <button className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-500 transition duration-300">
+          <button className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-500 transition duration-300" onClick={()=>navigate("/culture")}>
             Next Section
           </button>
         </div>

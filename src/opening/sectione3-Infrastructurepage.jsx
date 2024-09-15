@@ -2,15 +2,15 @@ import React from "react";
 
 const InfrastructurePage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-0">
       {/* Header Section */}
-      <div className="bg-blue-600 text-white text-center py-8 w-full">
-        <h1 className="text-4xl font-bold">Infrastructure for Safe and Inclusive Schools</h1>
-        <p className="text-lg mt-2">Ensuring a secure and inclusive environment for all students</p>
+      <div className="bg-blue-600 text-white text-center py-2 w-full">
+        <h6 className="text-4xl font-bold">Infrastructure for Safe and Inclusive Schools</h6>
+        {/* <p className="text-lg mt-2">Ensuring a secure and inclusive environment for all students</p> */}
       </div>
 
       {/* Main Content Section */}
-      <div className="container mx-auto p-4 bg-white shadow-md rounded-lg mt-8">
+      <div className="container mx-auto p-4 bg-white shadow-md rounded-lg mt-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Safety Card */}
           <div className="bg-white shadow-lg rounded-lg p-6">
