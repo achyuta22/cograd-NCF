@@ -49,7 +49,7 @@ const Culture = () => {
         </div>
       </div>
       <button
-        onClick={() => navigate("/sectione")}
+        onClick={() => navigate("/pageswithcards")}
         className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-4 sm:p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
         Next Section
