@@ -16,13 +16,14 @@ const Approach = () => {
     },
     {
       id: 3,
-      heading: "3. Approach to Learning Standards, Content, Pedagogy",
+      heading:
+        "3. Approach to Learning Standards, Content, Pedagogy and Assessment",
       link: "/approach-learning",
     },
     {
       id: 4,
-      heading: "4. Assessment and Allocation of Time",
-      link: "/approach-assessment",
+      heading: "4. Allocation of Time",
+      link: "/time1",
     },
   ];
 

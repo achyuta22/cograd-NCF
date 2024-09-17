@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 const Assess2 = () => {
   const navigate = useNavigate();
+  const handleNextChapter = () => {
+    navigate("/time1");
+  };
 
   const boxItems = [
     { title: "Foundational Stage", route: "/foundation" },
@@ -20,7 +23,6 @@ const Assess2 = () => {
             Stage Specific Categories
           </h2>
           <div className="border-t-4 border-teal-500 mx-auto w-16 mb-4"></div>
-        
         </div>
 
         {/* Box Grid */}
@@ -43,6 +45,12 @@ const Assess2 = () => {
           ))}
         </div>
       </div>
+      <button
+        onClick={handleNextChapter}
+        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300"
+      >
+        Next Chapter
+      </button>
     </div>
   );
 };
