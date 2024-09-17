@@ -4,15 +4,17 @@ import cardImage1 from '../images/Screenshot_2024_0817_073454.png';
 import cardImage3 from '../images/Screenshot_2024_0817_073510.png';
 import cardImage4 from '../images/Screenshot_2024_0817_073524.png';
 import cardImage5 from '../images/Screenshot_2024_0817_073537.png';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const cards = [
-  { id: 1, title: "Capacity building ", image: cardImage1 },
-  { id: 3, title: "Ensuring an Appropriate Environment for Learning", image: cardImage3 },
-  { id: 4, title: "Enabling and Empowering Teachers", image: cardImage4 },
-  { id: 5, title: "Community and Family Engagement", image: cardImage5 },
+  { id: 1, title: "Capacity building ", image: cardImage1 ,link:"/implementationOverview"},
+  { id: 3, title: "Ensuring an Appropriate Environment for Learning", image: cardImage3,link:"/environmentLearning" },
+  { id: 4, title: "Enabling and Empowering Teachers", image: cardImage4 ,link:"/enablingEmpoweringTeachers"},
+  { id: 5, title: "Community and Family Engagement", image: cardImage5,link:"/cards" },
 ];
 
 const PageWithCards = () => {
+  const navigate=useNavigate();
   return (
     <div>
       {/* Heading Section with Background Image */}
@@ -40,6 +42,7 @@ const PageWithCards = () => {
                 key={card.id}
                 className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105 flex flex-col" // Ensure content is in column and no extra space
                 style={{ height: '275px' }} // Fixed height for cards
+                onClick={()=>navigate(card.link)}
               >
                 <img
                   src={card.image}
