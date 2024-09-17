@@ -195,31 +195,64 @@ function App() {
         <Route path="/keyAspects" element={<KeyAspects />} />
 
         {/* sectione */}
-        <Route path="/pageswithcards" element={<PageWithCards/>}/>
+        <Route path="/pageswithcards" element={<PageWithCards />} />
         {/* <Route path="/sectione1" element={<Sectione1Cards/>}/> */}
-        <Route path="/implementationOverview" element={<ImplementationOverview/>}/>
-        <Route path="/stakeholderQuiz" element={<StakeholderQuiz/>}/>
-        <Route path="/curriculumFramework" element={<CurriculumFramework/>}/>
-        <Route path="/capacityBuildingCards" element={<CapacityBuildingCards/>}/>
-        <Route path="/specificSubjects" element={<SpecificSubjects/>}/>
-        <Route path="/capacityBuildingQuiz" element={<CapacityBuildingQuiz/>}/>
-        <Route path="/environmentLearning" element={<EnvironmentLearning/>}/>
-        <Route path="/outdoorInfraQuiz" element={<OutdoorInfrastructureReminderQuiz/>}/>
-        <Route path="/outdoorInfrastructure" element={<OutdoorInfrastructure/>}/>
-        <Route path="/indoorInfraQuiz" element={<IndoorInfrastructureQuiz/>}/>
-        <Route path="/indoorInfrastructure1" element={<IndoorInfrastructurePage1/>}/>
-        <Route path="/indoorInfrastructure2" element={<IndoorInfrastructurePart2/>} />
-        <Route path="/safetyInfra" element={<InfrastructureSafety/>}/>
-        <Route path="/enablingEmpoweringTeachers" element={<EnablingEmpoweringTeachers/>}/>
-        <Route path="/enablingEmpoweringforTeachers" element={<EnablingEnvironmentForTeachers/>}/>
-        <Route path="/teacherAutonomy" element={<TeacherAutonomyAndAccountability/>}/>
-        <Route path="/ptr" element={<PupilTeacherRatio/>} />
-        <Route path="/career" element={<CareerDevelopment/>}/>
-        <Route path="/inservice" element={<InServiceTeacherEducation/>}/>
-        <Route path="/preservice" element={<PreServiceTeacherEducation/>}/>
-        <Route path="/headQuiz" element={<HeadTeachersQuiz/>} />
-        <Route path="/academic" element={<AcademicAndAdministrativeFunctionaries/>}/>
-        <Route path="/cards" element={<CardsPageE/>}/>
+        <Route
+          path="/implementationOverview"
+          element={<ImplementationOverview />}
+        />
+        <Route path="/stakeholderQuiz" element={<StakeholderQuiz />} />
+        <Route path="/curriculumFramework" element={<CurriculumFramework />} />
+        <Route
+          path="/capacityBuildingCards"
+          element={<CapacityBuildingCards />}
+        />
+        <Route path="/specificSubjects" element={<SpecificSubjects />} />
+        <Route
+          path="/capacityBuildingQuiz"
+          element={<CapacityBuildingQuiz />}
+        />
+        <Route path="/environmentLearning" element={<EnvironmentLearning />} />
+        <Route
+          path="/outdoorInfraQuiz"
+          element={<OutdoorInfrastructureReminderQuiz />}
+        />
+        <Route
+          path="/outdoorInfrastructure"
+          element={<OutdoorInfrastructure />}
+        />
+        <Route path="/indoorInfraQuiz" element={<IndoorInfrastructureQuiz />} />
+        <Route
+          path="/indoorInfrastructure1"
+          element={<IndoorInfrastructurePage1 />}
+        />
+        <Route
+          path="/indoorInfrastructure2"
+          element={<IndoorInfrastructurePart2 />}
+        />
+        <Route path="/safetyInfra" element={<InfrastructureSafety />} />
+        <Route
+          path="/enablingEmpoweringTeachers"
+          element={<EnablingEmpoweringTeachers />}
+        />
+        <Route
+          path="/enablingEmpoweringforTeachers"
+          element={<EnablingEnvironmentForTeachers />}
+        />
+        <Route
+          path="/teacherAutonomy"
+          element={<TeacherAutonomyAndAccountability />}
+        />
+        <Route path="/ptr" element={<PupilTeacherRatio />} />
+        <Route path="/career" element={<CareerDevelopment />} />
+        <Route path="/inservice" element={<InServiceTeacherEducation />} />
+        <Route path="/preservice" element={<PreServiceTeacherEducation />} />
+        <Route path="/headQuiz" element={<HeadTeachersQuiz />} />
+        <Route
+          path="/academic"
+          element={<AcademicAndAdministrativeFunctionaries />}
+        />
+        <Route path="/cards" element={<CardsPageE />} />
         <Route path="/pageswithcards" element={<PageWithCards />} />
       </Routes>
     </Router>
