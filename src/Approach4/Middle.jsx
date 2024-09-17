@@ -8,8 +8,8 @@ const Middle = () => {
     feature1: {
       title: "Physical Development",
       description: (
-        <div className="flex flex-col items-center justify-center bg-gray-100 p-6">
-          <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8">
+        <div className="flex max-h-[70vh] overflow-auto flex-col items-center justify-center p-4">
+          <div className="w-full max-w-3xl bg-white ">
             {/* Introduction */}
             <p className="text-gray-700 text-lg mb-6">
               Physical development is a cornerstone of overall child
@@ -53,8 +53,8 @@ const Middle = () => {
     feature2: {
       title: "Cognitive Development",
       description: (
-        <div className="flex flex-col items-center justify-center bg-gray-100 p-6">
-          <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8">
+        <div className="flex max-h-[70vh] overflow-auto flex-col items-center justify-center p-4">
+          <div className="w-full max-w-3xl bg-white ">
             {/* Introduction */}
             <p className="text-gray-700 text-lg mb-6">
               Cognitive development is the foundation for learning and critical
@@ -99,8 +99,8 @@ const Middle = () => {
     feature3: {
       title: "Social & Ethical Development",
       description: (
-        <div className="flex flex-col items-center justify-center bg-gray-100 p-6">
-          <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8">
+        <div className="flex max-h-[70vh] overflow-auto flex-col items-center justify-center p-4">
+          <div className="w-full max-w-3xl bg-white ">
             {/* Introduction */}
             <p className="text-gray-700 text-lg mb-6">
               Social and ethical development is essential for students to become
@@ -143,8 +143,8 @@ const Middle = () => {
     feature4: {
       title: "Emotional Development",
       description: (
-        <div className="flex flex-col items-center justify-center bg-gray-100 p-6">
-          <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8">
+        <div className="flex max-h-[70vh] overflow-auto flex-col items-center justify-center p-4">
+          <div className="w-full max-w-3xl bg-white ">
             {/* Introduction */}
             <p className="text-gray-700 text-lg mb-6">
               Emotional development is a critical aspect of overall child
@@ -187,8 +187,8 @@ const Middle = () => {
     assessment: {
       title: "Assessment",
       description: (
-        <div className="flex flex-col items-center justify-center bg-gray-100 p-6">
-          <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8">
+        <div className="flex max-h-[70vh] overflow-auto flex-col items-center justify-center p-4">
+          <div className="w-full max-w-3xl bg-white ">
             {/* Introduction */}
             <p className="text-gray-700 text-lg mb-6">
               Assessment is an integral part of the teaching and learning
@@ -270,27 +270,27 @@ const Middle = () => {
       {/* Feature Modal */}
       {selectedFeature && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 backdrop-blur-sm p-4">
-          <div className="relative w-full max-w-sm sm:max-w-md p-6 bg-white rounded-lg shadow-2xl">
+          <div className="relative w-full max-w-sm sm:max-w-md p-2 bg-white rounded-lg shadow-2xl">
             <button
               className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-3xl"
               onClick={closeFeatureModal}
             >
               &times;
             </button>
-            <h3 className="mb-4 text-2xl font-semibold text-center text-teal-700">
+            {/* <h3 className="mb-4 text-2xl font-semibold text-center text-teal-700">
               {featuresData[selectedFeature].title}
-            </h3>
-            <p className="text-gray-700 text-center mb-6">
+            </h3> */}
+            <p className="text-gray-700 text-center">
               {featuresData[selectedFeature].description}
             </p>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <button
                 className="px-6 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition"
                 onClick={closeFeatureModal}
               >
                 Close
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       )}
