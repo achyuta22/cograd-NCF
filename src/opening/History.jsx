@@ -51,7 +51,7 @@ const HistoryPage = () => {
           </section>
 
           {/* Cross-Cutting Themes Section */}
-          <section className="bg-white rounded-lg shadow-md p-5 transition-transform transform hover:-translate-y-1 hover:shadow-xl hover:bg-blue-50">
+          <section className="bg-white mb-2 rounded-lg shadow-md p-5 transition-transform transform hover:-translate-y-1 hover:shadow-xl hover:bg-blue-50">
             <h2 className="text-xl md:text-2xl font-semibold text-blue-800 mb-3">
               Cross-Cutting Themes
             </h2>
