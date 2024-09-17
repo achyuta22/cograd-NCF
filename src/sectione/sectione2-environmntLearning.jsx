@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from '../images/vision.png'; // Update the path to your image
+import bgImage from "../images/Screenshot_2024_0817_073510.png"; // Update the path to your image
 import { useNavigate } from 'react-router-dom';
 
 const EnvironmentLearning = () => {
