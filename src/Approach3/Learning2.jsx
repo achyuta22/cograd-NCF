@@ -321,8 +321,8 @@ const boxData = {
 
 const Learning2 = () => {
   const navigate = useNavigate();
-  const handleNextChapter = () => {
-    navigate("/approach-assessment");
+  const handleNextPage = () => {
+    navigate("/assess1");
   };
   const [selectedBox, setSelectedBox] = useState(null);
 
@@ -379,10 +379,10 @@ const Learning2 = () => {
 
       {/* Next Chapter Button */}
       <button
-        onClick={handleNextChapter}
+        onClick={handleNextPage}
         className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300"
       >
-        Next Chapter
+        Next Page
       </button>
     </div>
   );

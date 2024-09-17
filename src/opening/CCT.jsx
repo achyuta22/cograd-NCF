@@ -32,7 +32,7 @@ const CCT = () => {
       color: "border-teal-400",
       textColor: "text-teal-700",
       content: (
-        <div className="p-6 flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
+        <div className="p-4 max-h-[50vh] overflow-auto flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px]">
           <h1 className="text-2xl font-extrabold text-blue-700 mb-4">
             Key Highlights of Integrating Indian Culture
           </h1>
@@ -75,7 +75,7 @@ const CCT = () => {
       color: "border-pink-400",
       textColor: "text-pink-700",
       content: (
-        <div className="p-6 flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
+        <div className="p-4 max-h-[50vh] overflow-auto flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
           <h1 className="text-2xl font-extrabold text-blue-700 mb-4">
             Key Highlights of Values & Dispositions
           </h1>
@@ -118,7 +118,7 @@ const CCT = () => {
       color: "border-green-400",
       textColor: "text-green-700",
       content: (
-        <div className="p-6 flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
+        <div className="p-4 max-h-[50vh] overflow-auto flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
           <h1 className="text-2xl font-extrabold text-blue-700 mb-4">
             Key Highlights of Caring for Nature
           </h1>
@@ -161,7 +161,7 @@ const CCT = () => {
       color: "border-blue-400",
       textColor: "text-blue-700",
       content: (
-        <div className="p-6 flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
+        <div className="p-4 max-h-[50vh] overflow-auto flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
           <h1 className="text-2xl font-extrabold text-blue-700 mb-4">
             Key Highlights of Inclusion in Schools
           </h1>
@@ -205,7 +205,7 @@ const CCT = () => {
       color: "border-purple-400",
       textColor: "text-purple-700",
       content: (
-        <div className="p-6 flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
+        <div className="p-4 max-h-[50vh] overflow-auto flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
           <h1 className="text-2xl font-extrabold text-blue-700 mb-4">
             Key Highlights of Guidance & Counselling
           </h1>
@@ -249,7 +249,7 @@ const CCT = () => {
       color: "border-red-400",
       textColor: "text-red-700",
       content: (
-        <div className="p-6 flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
+        <div className="p-4 max-h-[50vh] overflow-auto flex flex-col items-start bg-gradient-to-r from-blue-50 to-blue-100 min-w-[300px] min-h-[200px]">
           <h1 className="text-2xl font-extrabold text-blue-700 mb-4">
             Key Highlights of Educational Technology
           </h1>
@@ -364,7 +364,7 @@ const CCT = () => {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-white rounded-lg shadow-lg w-full max-w-3xl p-8 relative"
+              className="bg-white max-w-[40vh] rounded-2xl p-4 relative"
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
