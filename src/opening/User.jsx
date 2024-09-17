@@ -39,10 +39,10 @@ const UserPage = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white py-16">
+    <section className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white py-4">
       <div className="container mx-auto px-4 lg:px-8 max-w-screen-md">
-        <div className="bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold mb-6 text-blue-600 text-center">
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <h2 className="text-2xl font-bold mb-4 text-blue-600 text-center">
             Teacher Information
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
