@@ -20,7 +20,7 @@ const Slide6 = () => {
     socialEngagement: "",
   });
   const [showContent, setShowContent] = useState(false);
-
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setRankings((prev) => ({ ...prev, [name]: value }));
@@ -29,6 +29,7 @@ const Slide6 = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowContent(true);
+    setIsSubmitted(true);
   };
 
   const renderCardContent = () => {
@@ -36,8 +37,8 @@ const Slide6 = () => {
       case "Knowledge":
         return {
           question: (
-            <div className="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <ul className="list-disc list-inside space-y-4">
+            <div className="max-w-3xl mx-auto bg-white p-2">
+              <ul className="list-disc list-inside space-y-2">
                 <li className="text-gray-800 text-lg font-semibold">
                   What do you understand by Knowledge?
                 </li>
@@ -52,7 +53,7 @@ const Slide6 = () => {
             </div>
           ),
           answer: (
-            <section className="p-6 lg:p-12 max-w-full lg:max-w-4xl mx-auto mt-6 lg:mt-10 bg-white  overflow-y-auto max-h-[50vh]">
+            <section className="p-4 lg:p-12 max-w-full lg:max-w-4xl mx-auto  bg-white  overflow-y-auto max-h-[50vh]">
               <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-blue-900">
                 Knowledge
               </h2>
@@ -108,57 +109,63 @@ const Slide6 = () => {
       case "Capacities":
         return {
           question: (
-            <div className="max-w-full p-2 bg-white h-96 overflow-auto mx-auto">
-              <h1 className="text-2xl font-extrabold mb-6 text-gray-900">
-                Rank the Capacities
-              </h1>
+            <div className="max-w-full p-4 bg-white h-1/3 overflow-auto mx-auto">
+              {!isSubmitted && ( // Render form only if it hasn't been submitted
+                <>
+                  <h1 className="text-md font-bold mb-4 text-gray-900">
+                    Rank the Capacities
+                  </h1>
 
-              <form className="space-y-4" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 gap-4">
-                  {[
-                    "Inquiry",
-                    "Communication",
-                    "Problem Solving and Logical Reasoning",
-                    "Aesthetic and Cultural Capacities",
-                    "Health, Management and Work",
-                    "Social Engagement",
-                  ].map((label) => (
-                    <div className="flex flex-col" key={label}>
-                      <label
-                        htmlFor={label.toLowerCase().replace(/ /g, "")}
-                        className="text-lg font-medium text-gray-700 mb-2"
-                      >
-                        {label}:
-                      </label>
-                      <input
-                        id={label.toLowerCase().replace(/ /g, "")}
-                        name={label.toLowerCase().replace(/ /g, "")}
-                        type="number"
-                        min="1"
-                        max="6"
-                        value={rankings[label.toLowerCase().replace(/ /g, "")]}
-                        onChange={handleChange}
-                        className="border border-gray-300 rounded-md p-3 text-gray-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        required
-                      />
+                  <form className="space-y-2" onSubmit={handleSubmit}>
+                    <div className="grid grid-cols-1 gap-4">
+                      {[
+                        "Inquiry",
+                        "Communication",
+                        "Problem Solving and Logical Reasoning",
+                        "Aesthetic and Cultural Capacities",
+                        "Health, Management and Work",
+                        "Social Engagement",
+                      ].map((label) => (
+                        <div className="flex flex-col" key={label}>
+                          <label
+                            htmlFor={label.toLowerCase().replace(/ /g, "")}
+                            className="text-sm font-medium text-gray-700 mb-2"
+                          >
+                            {label}:
+                          </label>
+                          <input
+                            id={label.toLowerCase().replace(/ /g, "")}
+                            name={label.toLowerCase().replace(/ /g, "")}
+                            type="number"
+                            min="1"
+                            max="6"
+                            value={
+                              rankings[label.toLowerCase().replace(/ /g, "")]
+                            }
+                            onChange={handleChange}
+                            className="border font-normal text-sm border-gray-300 rounded-md p-1 text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            required
+                          />
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
 
-                <button
-                  type="submit"
-                  className="w-full text-lg bg-blue-600 text-white py-3 px-4 rounded-md font-semibold hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
-                >
-                  Submit Rankings
-                </button>
-              </form>
+                    <button
+                      type="submit"
+                      className="w-full text-lg bg-blue-600 text-white py-3 px-4 rounded-md font-semibold hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+                    >
+                      Submit Rankings
+                    </button>
+                  </form>
+                </>
+              )}
 
               {showContent && (
-                <div className="max-w-full mt-6 bg-white rounded-lg shadow-lg border border-gray-200 p-6 h-96 overflow-auto">
-                  <h1 className="text-2xl font-bold mb-6 text-gray-800">
+                <div className="max-w-full max-h-[60vh] bg-white  overflow-auto">
+                  <h1 className="text-2xl font-bold mb-2 text-gray-800">
                     Capacities
                   </h1>
-                  <div className="space-y-6">
+                  <div className="space-y-2">
                     {[
                       {
                         title: "Inquiry",
@@ -212,10 +219,10 @@ const Slide6 = () => {
         return {
           question: (
             <div
-              className="max-w-2xl mx-auto bg-white p-4 rounded-lg shadow-lg overflow-hidden"
+              className="max-w-2xl mx-auto bg-white p-2  overflow-hidden"
               style={{ maxHeight: "50vh" }}
             >
-              <ul className="list-disc list-inside space-y-4">
+              <ul className="list-disc list-inside space-y-2">
                 <li className="text-gray-700 text-lg">
                   Which values are developed by Education?
                 </li>
@@ -231,10 +238,10 @@ const Slide6 = () => {
               className="max-w-3xl mx-auto p-4 bg-white overflow-y-auto"
               style={{ maxHeight: "60vh" }}
             >
-              <h1 className="text-3xl font-bold mb-6 text-gray-800">Values</h1>
+              <h1 className="text-2xl font-bold mb-6 text-gray-800">Values</h1>
 
-              <section className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+              <section className="mb-4">
+                <h2 className="text-xl font-semibold text-gray-700 mb-2">
                   Ethical and Moral Values
                 </h2>
                 <p className="text-gray-600">
@@ -246,8 +253,8 @@ const Slide6 = () => {
                 </p>
               </section>
 
-              <section className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+              <section className="mb-4">
+                <h2 className="text-xl font-semibold text-gray-700 mb-2">
                   Democratic Values
                 </h2>
                 <p className="text-gray-600">
@@ -258,8 +265,8 @@ const Slide6 = () => {
                 </p>
               </section>
 
-              <section className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+              <section className="mb-4">
+                <h2 className="text-xl font-semibold text-gray-700 mb-2">
                   Epistemic Values
                 </h2>
                 <p className="text-gray-600">
@@ -271,7 +278,7 @@ const Slide6 = () => {
               </section>
 
               <section>
-                <h1 className="text-3xl font-bold mb-6 text-gray-800">
+                <h1 className="text-2xl font-bold mb-6 text-gray-800">
                   Disposition
                 </h1>
                 <div className="space-y-4">
