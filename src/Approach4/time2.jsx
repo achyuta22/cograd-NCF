@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 const Time2 = () => {
   const navigate = useNavigate();
-
+  const handleNextSection = () => {
+    navigate("/cct");
+  };
   const boxItems = [
     { title: "Foundational Stage", route: "/foundation-time" },
     { title: "Prepratory Stage", route: "/prepatory-time" },
@@ -42,6 +44,12 @@ const Time2 = () => {
           ))}
         </div>
       </div>
+      <button
+        onClick={handleNextSection}
+        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-4 sm:p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 focus:ring-4 focus:ring-teal-300"
+      >
+        Next Section
+      </button>
     </div>
   );
 };

@@ -118,11 +118,11 @@ const Learning1 = () => {
   };
   return (
     <div className="p-8 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 min-h-screen">
-      <h1 className="text-4xl font-extrabold text-center mb-12 text-teal-900">
+      <h1 className="text-4xl font-extrabold text-center mb-24 text-teal-900">
         Approach to Learning Standards
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-8 mb-12">
+      <div className="flex justify-center gap-8 mb-4">
         {/* Box 1 */}
         <div
           className="w-80 h-80 flex items-center justify-center cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-105"

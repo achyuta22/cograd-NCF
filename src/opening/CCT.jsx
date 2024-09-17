@@ -7,10 +7,14 @@ import cct4 from "../images/cct4.png";
 import cct5 from "../images/cct5.png";
 import cct6 from "../images/cct6.png";
 import cct7 from "../images/cct7.png";
+import { useNavigate } from "react-router-dom";
 
 const CCT = () => {
   const [selectedCard, setSelectedCard] = useState(null);
-
+  const navigate = useNavigate();
+  const handleNextSection = () => {
+    navigate("/school-subjects");
+  };
   const handleCardClick = (cardId) => {
     setSelectedCard(cardId === selectedCard ? null : cardId);
   };
@@ -282,8 +286,8 @@ const CCT = () => {
     },
   ];
   return (
-    <div className="p-8 bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen">
-      <div className="relative w-full h-80 mb-12 rounded-3xl shadow-lg border border-gray-200 overflow-hidden">
+    <div className="p-4 bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen">
+      <div className="relative w-full h-80 mb-4 rounded-3xl shadow-lg border border-gray-200 overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={cct1}
@@ -291,11 +295,11 @@ const CCT = () => {
             className="w-full h-full object-cover opacity-50"
           />
         </div>
-        <div className="relative z-10 h-full flex flex-col items-center justify-center bg-gradient-to-b from-transparent to-blue-500 bg-opacity-60 p-8">
+        <div className="relative z-10 h-full flex flex-col items-center justify-center bg-gradient-to-b from-transparent to-blue-500 bg-opacity-60 p-6">
           <h1 className="text-4xl font-extrabold text-white md:text-5xl xl:text-6xl leading-tight tracking-tight text-center shadow-lg">
             Cross Cutting Themes
           </h1>
-          <p className="text-white text-center mt-6 max-w-3xl">
+          <p className="text-white text-center mt-4 max-w-3xl">
             These cross-cutting themes and examples illustrate how schools can
             align with the National Curriculum Framework for School Education
             2023 to provide a holistic, inclusive, and future-ready education.
@@ -303,7 +307,7 @@ const CCT = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between mb-12">
+      <div className="flex flex-col md:flex-row items-center justify-between mb-6">
         <div className="w-full md:w-1/2 p-4">
           <h2 className="text-2xl md:text-3xl font-bold text-blue-700 text-center md:text-left mb-4">
             Embracing Diversity in Education
@@ -322,7 +326,7 @@ const CCT = () => {
         </div>
       </div>
 
-      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {cardData.map((card) => (
           <motion.div
             key={card.id}
@@ -379,6 +383,12 @@ const CCT = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      <button
+        onClick={handleNextSection}
+        className="fixed bottom-8 z-10 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-4 sm:p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 focus:ring-4 focus:ring-teal-300"
+      >
+        Next Section
+      </button>
     </div>
   );
 };

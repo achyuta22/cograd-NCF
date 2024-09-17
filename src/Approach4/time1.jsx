@@ -32,16 +32,22 @@ const Time1 = () => {
             } cursor-pointer hover:shadow-2xl`}
             onClick={() => handleBoxClick("keyPrinciples")}
           >
-            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4">
-              Reduced Content Load{" "}
-            </h3>
+            <div className="flex flex-col items-center text-center">
+              {" "}
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4">
+                Reduced Content Load
+              </h3>
+              <p className="text-sm sm:text-md font-light text-gray-900 mb-2 sm:mb-4">
+                click to know more
+              </p>
+            </div>
             {activeSection === "keyPrinciples" && (
-              <div className=" py-4">
+              <div className=" py-3">
                 <div className="container mx-auto px-2 sm:px-6 lg:px-8">
                   {/* Content Sections */}
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
                     {/* Core Competencies */}
-                    <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="bg-white p-2">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">
                         Focus on Core Competencies
                       </h3>
@@ -52,7 +58,7 @@ const Time1 = () => {
                     </div>
 
                     {/* Time for Exploration */}
-                    <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="bg-white p-2">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">
                         Time for Exploration
                       </h3>
@@ -63,7 +69,7 @@ const Time1 = () => {
                     </div>
 
                     {/* Efficiency in Teaching and Learning */}
-                    <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="bg-white p-2">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">
                         Efficiency in Teaching and Learning
                       </h3>
@@ -74,7 +80,7 @@ const Time1 = () => {
                     </div>
 
                     {/* Subject-Specific Considerations */}
-                    <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow md:col-span-2 lg:col-span-3">
+                    <div className="bg-white p-2 md:col-span-2 lg:col-span-3">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">
                         Subject-Specific Considerations
                       </h3>
@@ -98,46 +104,50 @@ const Time1 = () => {
             } cursor-pointer hover:shadow-2xl`}
             onClick={() => handleBoxClick("holisticProgressCard")}
           >
-            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4">
-              Holistic Progress Card
-            </h3>
+            <div className="flex flex-col items-center text-center">
+              {" "}
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4">
+                Time Allocation
+              </h3>
+              <p className="text-sm sm:text-md font-light text-gray-900 mb-2 sm:mb-4">
+                click to know more
+              </p>
+            </div>
             {activeSection === "holisticProgressCard" && (
-              <div className="py-4 ">
-                <div className="container mx-auto sm:px-6 lg:px-8">
-                  {/* Content Section */}
-                  <div className="bg-white p-4 rounded-lg shadow-lg">
-                    <ul className="list-disc pl-5 space-y-2 text-gray-700 text-lg">
-                      <li>
-                        <strong>Total Instructional Days:</strong> Approximately
-                        220 days per year, excluding holidays and breaks.
-                      </li>
-                      <li>
-                        <strong>Assessment and School Events:</strong> Allocate
-                        around 40 days for assessments and school activities.
-                      </li>
-                      <li>
-                        <strong>Effective Instructional Time:</strong>{" "}
-                        Approximately 180 days available for core teaching and
-                        learning.
-                      </li>
-                      <li>
-                        <strong>School Week Structure:</strong> Consider a
-                        five-and-a-half-day school week, with flexibility for
-                        schools to adjust based on local needs.
-                      </li>
-                      <li>
-                        <strong>Annual Instructional Hours:</strong> Aim for
-                        around 34 working weeks with approximately 29
-                        instructional hours per week.
-                      </li>
-                      <li>
-                        <strong>Daily Timetable Flexibility:</strong> Schools
-                        can choose to maintain a fixed daily schedule or vary it
-                        based on factors like breakfast availability, daylight
-                        hours, and subject priorities.
-                      </li>
-                    </ul>
-                  </div>
+              <div className="container mx-auto sm:px-6 lg:px-8">
+                {/* Content Section */}
+                <div className="bg-white p-2">
+                  <ul className="list-disc pl-3 space-y-4 text-gray-700 text-md">
+                    <li>
+                      <strong>Total Instructional Days:</strong> Approximately
+                      220 days per year, excluding holidays and breaks.
+                    </li>
+                    <li>
+                      <strong>Assessment and School Events:</strong> Allocate
+                      around 40 days for assessments and school activities.
+                    </li>
+                    <li>
+                      <strong>Effective Instructional Time:</strong>{" "}
+                      Approximately 180 days available for core teaching and
+                      learning.
+                    </li>
+                    <li>
+                      <strong>School Week Structure:</strong> Consider a
+                      five-and-a-half-day school week, with flexibility for
+                      schools to adjust based on local needs.
+                    </li>
+                    <li>
+                      <strong>Annual Instructional Hours:</strong> Aim for
+                      around 34 working weeks with approximately 29
+                      instructional hours per week.
+                    </li>
+                    <li>
+                      <strong>Daily Timetable Flexibility:</strong> Schools can
+                      choose to maintain a fixed daily schedule or vary it based
+                      on factors like breakfast availability, daylight hours,
+                      and subject priorities.
+                    </li>
+                  </ul>
                 </div>
               </div>
             )}

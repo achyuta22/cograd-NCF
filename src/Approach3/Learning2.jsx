@@ -5,10 +5,6 @@ import { useNavigate } from "react-router-dom";
 const boxData = {
   box3: (
     <div className="p-2">
-      <h1 className="text-4xl font-extrabold text-center mb-4 text-teal-900">
-        Principles of Effective Pedagogy
-      </h1>
-
       <div className="max-w-4xl mx-auto bg-white ">
         <section className="mb-4">
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">
@@ -83,11 +79,7 @@ const boxData = {
   ),
   box4: (
     <div className="p-2">
-      <h1 className="text-4xl font-extrabold text-center mb-4 text-teal-900">
-        Key Elements of Effective Pedagogy
-      </h1>
-
-      <div className="max-w-4xl mx-auto bg-white p-6">
+      <div className="max-w-4xl mx-auto bg-white ">
         <section className="mb-4">
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">
             Creating a Supportive Learning Environment
@@ -176,11 +168,7 @@ const boxData = {
   ),
   box5: (
     <div className="p-2 ">
-      <h1 className="text-4xl font-extrabold text-center mb-4 text-teal-900">
-        Effective Lesson Planning
-      </h1>
-
-      <div className="max-w-4xl mx-auto bg-white p-4">
+      <div className="max-w-4xl mx-auto bg-white ">
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">
             Key Elements
@@ -219,13 +207,9 @@ const boxData = {
       </div>
     </div>
   ),
-  box6: (
+  box7: (
     <div className="p-2 b">
-      <h1 className="text-4xl font-extrabold text-center mb-4 text-green-900">
-        Classroom Management and Student Behavior
-      </h1>
-
-      <div className="max-w-4xl mx-auto p-4">
+      <div className="max-w-4xl mx-auto ">
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">
             Key Elements
@@ -266,13 +250,9 @@ const boxData = {
       </div>
     </div>
   ),
-  box7: (
+  box6: (
     <div className="p-2">
-      <h1 className="text-4xl font-extrabold text-center mb-4 text-teal-900">
-        Effective Homework
-      </h1>
-
-      <div className="max-w-4xl mx-auto bg-white p-4">
+      <div className="max-w-4xl mx-auto bg-white">
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">
             Key Elements
@@ -302,11 +282,7 @@ const boxData = {
   ),
   box8: (
     <div className="p-2">
-      <h1 className="text-4xl font-extrabold text-center mb-4 text-teal-900">
-        Responding to Diverse Learner Needs
-      </h1>
-
-      <div className="max-w-4xl mx-auto bg-white  p-4">
+      <div className="max-w-4xl mx-auto bg-white ">
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">
             Key Elements
@@ -374,7 +350,7 @@ const Learning2 = () => {
         ].map((question, index) => (
           <div
             key={index}
-            className="w-full h-28 p-3 bg-green-200 shadow-md rounded-2xl flex items-center justify-center cursor-pointer hover:bg-green-300 transition-transform transform hover:scale-105 hover:shadow-lg"
+            className="w-full h-28 p-3 bg-gray-200 border border-green-600 rounded-2xl flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-transform transform hover:scale-105"
             onClick={() => setSelectedBox(`box${index + 3}`)}
           >
             <div className="text-center text-lg font-bold text-green-900">
