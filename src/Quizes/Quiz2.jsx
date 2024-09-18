@@ -3,62 +3,62 @@ import React, { useState } from "react";
 const questions = [
   {
     question:
-      "1. What is the primary aim of school education according to the NCFSE 2023?",
+      "1. Which of the following is a primary focus of the 'Sustainability and Environmental Education' theme in the NCFSE 2023?",
     options: [
-      "Focus solely on academic excellence",
-      "Prepare students for competitive exams",
-      "Teach students only technical skills",
-      "Foster the holistic development of students",
-    ],
-    answer: 3,
-  },
-  {
-    question:
-      "2. The NCFSE 2023 emphasizes a shift towards which type of learning?",
-    options: [
-      "Rote learning",
-      "Competency-based learning",
-      "Memorization-based learning",
-      "Textbook-centered learning",
-    ],
-    answer: 1,
-  },
-  {
-    question:
-      "3. Which of the following is NOT listed as a key curricular area in the NCFSE 2023?",
-    options: [
-      "Languages",
-      "Science and Technology",
-      "Ethics and Philosophy",
-      "Physical Education",
-    ],
-    answer: 2,
-  },
-  {
-    question:
-      "4. According to the NCFSE 2023, what is the role of language education in the curriculum?",
-    options: [
-      "To develop communication skills and cultural understanding through multilingualism",
-      "To focus only on English as the medium of instruction",
-      "To limit students to their mother tongue",
-      "To prioritize regional languages over all others",
+      "Instilling responsibility towards nature and promoting sustainable practices",
+      "Promoting technological advancements",
+      "Encouraging economic growth",
+      "Fostering competition among students",
     ],
     answer: 0,
   },
   {
     question:
-      "5. What is the goal of integrating arts and aesthetics into the curriculum as per NCFSE 2023?",
+      "2. What is the main objective of Global Citizenship Education (GCE) as described in the NCFSE 2023?",
     options: [
-      "To improve mathematical skills",
-      "To foster creativity and self-expression",
-      "To reduce the number of academic subjects",
-      "To focus on theoretical knowledge only",
+      "Preparing students for local employment opportunities",
+      "Encouraging students to excel in competitive exams",
+      "Preparing students to be responsible, active participants in a global society",
+      "Focusing solely on national issues",
+    ],
+    answer: 2,
+  },
+  {
+    question:
+      "3. How does the NCFSE 2023 propose to address gender sensitivity in education?",
+    options: [
+      "By creating separate curricula for boys and girls",
+      "By integrating gender-sensitive content across all subjects",
+      "By minimizing discussions about gender in the classroom",
+      "By promoting traditional gender roles",
     ],
     answer: 1,
   },
+  {
+    question:
+      "4. What is a key component of the 'Health and Well-being' theme in the NCFSE 2023?",
+    options: [
+      "Emphasizing only physical fitness",
+      "Promoting mental health, physical fitness, and nutrition education",
+      "Focusing solely on academic performance",
+      "Encouraging competition in sports",
+    ],
+    answer: 1,
+  },
+  {
+    question:
+      "5. The 'Digital Literacy and Cyber Safety' theme in the NCFSE 2023 primarily aims to:",
+    options: [
+      "Teach students advanced programming skills",
+      "Prepare students for competitive coding competitions",
+      "Educate students on responsible and safe use of digital tools",
+      "Limit students' access to technology",
+    ],
+    answer: 2,
+  },
 ];
 
-const Quiz1 = () => {
+const Quiz2 = () => {
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
@@ -85,9 +85,9 @@ const Quiz1 = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-gradient-to-r from-blue-50 to-indigo-100 rounded-xl shadow-2xl">
+    <div className="max-w-lg mx-auto p-6 bg-gradient-to-r from-blue-50 to-indigo-10 rounded-xl shadow-2xl">
       <h1 className="text-2xl font-extrabold text-center text-indigo-800 mb-8">
-        Quiz 1: Aims of School Education and Curricular Areas
+        Quiz 2: Cross-Cutting Themes
       </h1>
       {questions.map((q, questionIndex) => (
         <div key={questionIndex} className="mb-8">
@@ -124,4 +124,4 @@ const Quiz1 = () => {
   );
 };
 
-export default Quiz1;
+export default Quiz2;

@@ -90,6 +90,7 @@ import AcademicAndAdministrativeFunctionaries from "./sectione/sectione4-academi
 import CardsPageE from "./sectione/sectione4-cards";
 import Curricular from "./components/Curricular";
 import Quiz1 from "./Quizes/Quiz1";
+import Quiz2 from "./Quizes/Quiz2";
 function App() {
   return (
     <Router>
@@ -137,7 +138,8 @@ function App() {
         <Route path="/prepatory-time" element={<Prepratorytime />} />
         <Route path="/middle-time" element={<Middletime />} />
         <Route path="/secondary-time" element={<Secondarytime />} />
-        <Route path="/quizes1" element={<Quiz1 />} />
+        <Route path="/test1" element={<Quiz1 />} />
+        <Route path="/test2" element={<Quiz2 />} />
 
         <Route path="/sectione" element={<CardsPage />} />
         {/* <Route path="/sectione1" element={<Sectione1 />} /> */}
