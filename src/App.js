@@ -91,6 +91,9 @@ import CardsPageE from "./sectione/sectione4-cards";
 import Curricular from "./components/Curricular";
 import Quiz1 from "./Quizes/Quiz1";
 import Quiz2 from "./Quizes/Quiz2";
+import Quiz3 from "./Quizes/Quiz3";
+import Quiz4 from "./Quizes/Quiz4";
+import Quiz5 from "./Quizes/Quiz5";
 function App() {
   return (
     <Router>
@@ -138,8 +141,13 @@ function App() {
         <Route path="/prepatory-time" element={<Prepratorytime />} />
         <Route path="/middle-time" element={<Middletime />} />
         <Route path="/secondary-time" element={<Secondarytime />} />
+
+        {/* Quizes */}
         <Route path="/test1" element={<Quiz1 />} />
         <Route path="/test2" element={<Quiz2 />} />
+        <Route path="/test3" element={<Quiz3 />} />
+        <Route path="/test4" element={<Quiz4 />} />
+        <Route path="/test5" element={<Quiz5 />} />
 
         <Route path="/sectione" element={<CardsPage />} />
         {/* <Route path="/sectione1" element={<Sectione1 />} /> */}
