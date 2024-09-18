@@ -78,20 +78,20 @@ const Quiz1 = () => {
   const getOptionClass = (questionIndex, optionIndex) => {
     if (!submitted) return "";
     if (questions[questionIndex].answer === optionIndex)
-      return "bg-green-500 text-white";
+      return "bg-green-600 text-white border-green-600";
     if (selectedAnswers[questionIndex] === optionIndex)
-      return "bg-red-500 text-white";
+      return "bg-red-600 text-white border-red-600";
     return "";
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
-      <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">
-        Chapter 1: Aims of School Education and Curricular Areas
+    <div className="max-w-lg mx-auto p-6 bg-gradient-to-r from-blue-50 to-indigo-100 rounded-xl shadow-2xl">
+      <h1 className="text-2xl font-extrabold text-center text-indigo-800 mb-8">
+        Quiz 1
       </h1>
       {questions.map((q, questionIndex) => (
         <div key={questionIndex} className="mb-8">
-          <h2 className="text-lg font-semibold text-gray-700 mb-4">
+          <h2 className="text-lg font-medium text-gray-800 mb-4">
             {q.question}
           </h2>
           <div className="space-y-3">
@@ -99,12 +99,12 @@ const Quiz1 = () => {
               <button
                 key={optionIndex}
                 onClick={() => handleOptionClick(questionIndex, optionIndex)}
-                className={`block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 ease-in-out shadow-md hover:shadow-lg hover:bg-blue-100 focus:ring-2 focus:ring-blue-500 focus:outline-none ${getOptionClass(
+                className={`block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none ${getOptionClass(
                   questionIndex,
                   optionIndex
                 )} ${
                   selectedAnswers[questionIndex] === optionIndex
-                    ? "border-2 border-blue-400"
+                    ? "border-2 border-indigo-600"
                     : "border border-gray-300"
                 }`}
               >
@@ -116,7 +116,7 @@ const Quiz1 = () => {
       ))}
       <button
         onClick={handleSubmit}
-        className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
+        className="w-full bg-indigo-600 text-white font-bold py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105"
       >
         Submit
       </button>
