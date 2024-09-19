@@ -82,7 +82,7 @@ const Slide2 = () => {
           </div>
         )}
         <div className="flex justify-end mt-6">
-          <BackButton />
+          <BackButton/>
           <button
             onClick={handleNextPage}
             disabled={selectedVisions.length !== 4}
