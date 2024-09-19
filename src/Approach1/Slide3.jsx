@@ -8,7 +8,7 @@ const Slide3 = () => {
 
   return (
     <div className="relative py-6 px-6 lg:px-12 bg-gradient-to-b from-blue-50 via-white to-blue-200 min-h-screen flex flex-col items-center">
-      <div className="grid lg:grid-cols-12 gap-8 mt-12 lg:mt-16 items-center">
+      <div className="grid lg:grid-cols-12 gap-8  items-center">
         <div className="lg:col-span-7">
           <h2 className="text-3xl lg:text-4xl font-semibold mb-6 text-blue-800 leading-tight text-center lg:text-left">
             Vision of Education
