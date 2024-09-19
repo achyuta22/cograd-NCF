@@ -94,12 +94,14 @@ import Quiz2 from "./Quizes/Quiz2";
 import Quiz3 from "./Quizes/Quiz3";
 import Quiz4 from "./Quizes/Quiz4";
 import Quiz5 from "./Quizes/Quiz5";
+import BackButton from "./components/Backbutton";
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/cct" element={<CCT />} />
+        <Route path="/back" element={<BackButton />} />
         <Route path="/table" element={<Historytable />} />
         <Route path="/culture" element={<Culture />} />
         <Route path="/school-culture" element={<Cultureschool />} />
