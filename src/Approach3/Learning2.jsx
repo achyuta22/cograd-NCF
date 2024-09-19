@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/Backbutton";
 
 // Data for each box
 const boxData = {
@@ -331,14 +332,14 @@ const Learning2 = () => {
   };
 
   return (
-    <div className="p-4 bg-gradient-to-b from-blue-50 to-blue-100 min-h-screen">
+    <div className="p-4 bg-gray-50 min-h-screen">
       {/* New Heading */}
-      <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 text-green-800">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-10 text-green-800">
         Approach to Pedagogy
       </h2>
 
       {/* New Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 px-4">
         {/* Box Template */}
         {[
           "How does a teacher help in attaining the aims of education?",
@@ -362,7 +363,7 @@ const Learning2 = () => {
 
       {/* Modal for Displaying Selected Box Data */}
       {selectedBox && (
-        <div className="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 p-4">
+        <div className="fixed inset-0 bg-gray-300 bg-opacity-75 flex items-center justify-center z-50 p-4">
           <div className="relative bg-white p-6 border border-gray-300 rounded-lg shadow-xl max-w-md w-full mx-auto overflow-auto max-h-[80vh]">
             <button
               className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl font-bold transition-transform transform hover:scale-110"
@@ -378,11 +379,12 @@ const Learning2 = () => {
       )}
 
       {/* Next Chapter Button */}
+      <BackButton />
       <button
         onClick={handleNextPage}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
-        Next Page
+        Next
       </button>
     </div>
   );

@@ -6,6 +6,10 @@ const Learning1 = () => {
   const handleNextPage = () => {
     navigate("/learning2");
   };
+
+  const handlePrevPage = () => {
+    navigate("/stage5");
+  };
   const boxData = {
     box1: (
       <div className="p-2 bg-white rounded-lg ">
@@ -117,7 +121,7 @@ const Learning1 = () => {
     setSelectedBox(null);
   };
   return (
-    <div className="p-8 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 min-h-screen">
+    <div className="p-8 bg-gray-50 to-gray-300 min-h-screen">
       <h1 className="text-4xl font-extrabold text-center mb-24 text-teal-900">
         Approach to Learning Standards
       </h1>
@@ -175,10 +179,16 @@ const Learning1 = () => {
       )}
 
       <button
-        onClick={handleNextPage}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        onClick={handlePrevPage}
+        className="fixed bottom-4 z-10 left-8 bg-gradient-to-br from-red-400 to-red-400 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-red-500 active:scale-95 focus:ring-4 focus:ring-red-300"
       >
-        Next Page
+        Previous Chapter
+      </button>
+      <button
+        onClick={handleNextPage}
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+      >
+        Next
       </button>
     </div>
   );
