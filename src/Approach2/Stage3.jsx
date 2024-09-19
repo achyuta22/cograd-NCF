@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Popup from "../components/Popup";
+import BackButton from "../components/Backbutton";
 
 const Stage3 = () => {
   const navigate = useNavigate();
@@ -24,17 +25,17 @@ const Stage3 = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200 py-4 px-4 md:px-8">
+    <div className="bg-gradient-to-b min-h-screen from-gray-50 via-gray-100 to-gray-200 py-2 px-4 md:px-8">
       {/* New Heading and Square Boxes */}
       <div className="my-4 px-4 md:px-8">
-        <h2 className="text-4xl font-semibold text-center text-teal-800 mb-4">
+        <h2 className="text-3xl font-semibold text-center text-teal-800 mb-12">
           Developmental Milestones
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Left and Right Boxes */}
           <div className="flex flex-col gap-4 col-span-1 md:col-span-1">
             <div
-              className="bg-gradient-to-br from-teal-500 to-teal-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
+              className="bg-gradient-to-br from-teal-500 to-teal-700 p-4 h-32 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
               onClick={() =>
                 handleOpenPopup(
                   "Physical Development",
@@ -76,7 +77,7 @@ const Stage3 = () => {
               </p>
             </div>
             <div
-              className="bg-gradient-to-br from-teal-500 to-teal-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
+              className="bg-gradient-to-br from-teal-500 to-teal-700 p-4 h-32 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
               onClick={() =>
                 handleOpenPopup(
                   "Moral Development",
@@ -121,7 +122,7 @@ const Stage3 = () => {
           {/* Center Box */}
           <div className="flex flex-col col-span-1 md:col-span-1">
             <div
-              className="bg-gradient-to-br from-teal-500 to-teal-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
+              className="bg-gradient-to-br from-teal-500 to-teal-700 p-4 h-32 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
               onClick={() =>
                 handleOpenPopup(
                   "Cognitive Development",
@@ -171,7 +172,7 @@ const Stage3 = () => {
           {/* Right Two Vertical Boxes */}
           <div className="flex flex-col gap-4 col-span-1 md:col-span-1">
             <div
-              className="bg-gradient-to-br from-teal-500 to-teal-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
+              className="bg-gradient-to-br from-teal-500 to-teal-700 p-4 h-32 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
               onClick={() =>
                 handleOpenPopup(
                   "Language Development",
@@ -215,7 +216,7 @@ const Stage3 = () => {
               </p>
             </div>
             <div
-              className="bg-gradient-to-br from-teal-500 to-teal-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
+              className="bg-gradient-to-br from-teal-500 to-teal-700 p-4 h-32 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer transform hover:scale-105"
               onClick={() =>
                 handleOpenPopup(
                   "Emotional Development",
@@ -272,11 +273,12 @@ const Stage3 = () => {
           />
         )}
       </div>
+      <BackButton />
       <button
         onClick={handleNextPage}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
-        Next Page
+        Next
       </button>
     </div>
   );

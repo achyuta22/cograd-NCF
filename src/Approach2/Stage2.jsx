@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/Backbutton";
 
 const Stage2 = () => {
   const [showDetails, setShowDetails] = useState(null);
@@ -14,12 +15,12 @@ const Stage2 = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between p-4 bg-gradient-to-b from-white to-teal-50 min-h-screen">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mt-4 mb-6 text-teal-700 drop-shadow-lg">
+    <div className="flex flex-col min-h-screen justify-between p-4 bg-gray-50 ">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mt-4 text-teal-700 drop-shadow-lg">
         Child Development
       </h2>
 
-      <p className="text-base md:text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto px-4 mb-6 md:mb-8">
+      <p className="text-base md:text-lg mb-20 text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
         Child development is influenced by the interplay of three different
         processes, namely, biological processes, cognitive processes, and
         socio-emotional processes. These processes are intricately interwoven
@@ -27,7 +28,7 @@ const Stage2 = () => {
       </p>
 
       {/* Development Boxes */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-56">
         {/* Box 1 - Stages */}
         <div className="relative flex flex-col gap-4 col-span-1">
           <div
@@ -158,11 +159,12 @@ const Stage2 = () => {
       </div>
 
       {/* Next Page Button */}
+      <BackButton />
       <button
         onClick={handleNextPage}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
-        Next Page
+        Next
       </button>
     </div>
   );

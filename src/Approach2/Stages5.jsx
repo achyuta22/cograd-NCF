@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/Backbutton";
 
 const Stages5 = () => {
   const navigate = useNavigate();
@@ -127,9 +128,10 @@ const Stages5 = () => {
           </tbody>
         </table>
       </div>
+      <BackButton />
       <button
         onClick={handleNextChapter}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
         Next Chapter
       </button>

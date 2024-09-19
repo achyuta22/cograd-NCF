@@ -1,6 +1,7 @@
 import React from "react";
 import vikasImage from "../images/vikas.png";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/Backbutton";
 
 const Stage4 = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const Stage4 = () => {
       <div className="bg-white p-8  flex flex-col md:flex-row items-center">
         {/* Text Section */}
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-4xl font-semibold text-teal-700 mb-8 text-center md:text-left">
+          <h2 className="text-3xl font-semibold text-teal-700 mb-8 text-center md:text-left">
             Panchkosha Vikas
           </h2>
           <ul className="text-lg text-gray-700 list-disc list-inside space-y-4">
@@ -49,11 +50,12 @@ const Stage4 = () => {
           />
         </div>
       </div>
+      <BackButton />
       <button
         onClick={handleNextPage}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
-        Next Page
+        Next
       </button>
     </div>
   );

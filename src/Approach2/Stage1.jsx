@@ -1,12 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import stagesImage from "../images/stages.jpg";
+import BackButton from "../components/Backbutton";
 
 const Stage1 = () => {
   const navigate = useNavigate();
 
   const handleNextPage = () => {
     navigate("/stage2");
+  };
+
+  const handlePrevPage = () => {
+    navigate("/curricular");
   };
 
   return (
@@ -40,10 +45,16 @@ const Stage1 = () => {
       {/* Next Page Button */}
       <div className="flex justify-end items-end mb-8">
         <button
-          onClick={handleNextPage}
-          className="fixed bottom-8 right-8 bg-teal-500 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95"
+          onClick={handlePrevPage}
+          className="fixed bottom-4 z-10 left-8 bg-gradient-to-br from-red-400 to-red-400 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-red-500 active:scale-95 focus:ring-4 focus:ring-red-300"
         >
-          Next Page
+          Previous Chapter
+        </button>
+        <button
+          onClick={handleNextPage}
+          className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        >
+          Next
         </button>
       </div>
     </div>
