@@ -1,6 +1,7 @@
 import React from "react";
 import vision from "../images/vision.png";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/Backbutton";
 
 const Slide3 = () => {
   const navigate = useNavigate();
@@ -35,11 +36,12 @@ const Slide3 = () => {
         </div>
       </div>
       {/* Next Page Button */}
+      <BackButton />
       <button
         onClick={() => navigate("/quiz2")}
-        className="absolute bottom-8 right-8 bg-gradient-to-r from-teal-500 to-teal-700 text-white py-3 px-6 rounded-full shadow-lg hover:from-teal-600 hover:to-teal-800 focus:outline-none focus:ring-4 focus:ring-teal-300 transition-all duration-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
-        Next Page
+        Next
       </button>
     </div>
   );

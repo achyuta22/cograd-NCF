@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import aim from "../images/aim.png"; // Adjust the path to your image
+import BackButton from "../components/Backbutton";
 
 const Slide5 = () => {
   const navigate = useNavigate();
@@ -44,11 +45,12 @@ const Slide5 = () => {
       </div>
       {/* Next Page Button */}
       <div className="flex justify-end items-end p-4">
+        <BackButton />
         <button
           onClick={handleNextPage}
-          className="bg-gradient-to-r from-teal-500 to-teal-700 text-white py-3 px-6 rounded-full shadow-lg hover:from-teal-600 hover:to-teal-800 focus:outline-none focus:ring-4 focus:ring-teal-300 transition-transform transform duration-300"
+          className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
         >
-          Next Page
+          Next
         </button>
       </div>
     </div>

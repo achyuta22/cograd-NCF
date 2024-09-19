@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/Backbutton";
 
 const visions = [
   "Empowering Future Innovators",
@@ -81,16 +82,17 @@ const Slide2 = () => {
           </div>
         )}
         <div className="flex justify-end mt-6">
+          <BackButton />
           <button
             onClick={handleNextPage}
             disabled={selectedVisions.length !== 4}
-            className={`px-6 py-3 rounded-full shadow-lg transition-transform duration-300 ${
+            className={` fixed bottom-4 right-8  p-5 rounded-3xl shadow-lg transition-transform hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300  transform hover:scale-105 duration-300 ${
               selectedVisions.length === 4
-                ? "bg-teal-600 text-white hover:bg-teal-700"
+                ? "bg-gradient-to-br from-teal-400 to-teal-600 text-white hover:bg-teal-700"
                 : "bg-gray-400 text-gray-700 cursor-not-allowed"
             }`}
           >
-            Next Page
+            Next
           </button>
         </div>
       </div>

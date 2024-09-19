@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/Backbutton";
 
 const Slide6 = () => {
   const [selectedBox, setSelectedBox] = useState(null);
@@ -332,10 +333,10 @@ const Slide6 = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-900 py-12 lg:py-24 min-h-screen flex flex-col">
+    <section className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-900 py-8 lg:py-16 min-h-screen flex flex-col">
       <div className="container mx-auto px-6 lg:px-8 flex-1 flex flex-col justify-between">
         {/* Introduction */}
-        <div className="text-center mb-12 lg:mb-16">
+        <div className="text-center mb-8 lg:mb-12">
           <p className="text-gray-800 text-lg lg:text-xl leading-relaxed mx-auto max-w-3xl">
             The five Aims of Education, as articulated in the previous section,
             would be achieved by schools by developing relevant and appropriate
@@ -344,9 +345,9 @@ const Slide6 = () => {
         </div>
 
         {/* Three Square Boxes Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 mb-6 flex-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-1">
           <div
-            className="bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105"
+            className="bg-gradient-to-r h-40 from-blue-400 to-blue-600 p-2 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105"
             onClick={() => handleBoxClick("Knowledge")}
           >
             <div className="text-center">
@@ -362,7 +363,7 @@ const Slide6 = () => {
             </p>
           </div>
           <div
-            className="bg-gradient-to-r from-green-400 to-green-600 p-6 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105"
+            className="bg-gradient-to-r h-40 from-green-400 to-green-600 p-2 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105"
             onClick={() => handleBoxClick("Capacities")}
           >
             <div className="text-center">
@@ -378,7 +379,7 @@ const Slide6 = () => {
             </p>
           </div>
           <div
-            className="bg-gradient-to-r from-yellow-400 to-yellow-600 p-6 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105"
+            className="bg-gradient-to-r from-yellow-400 to-yellow-600 p-2 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105 h-40" // Added height constraint
             onClick={() => handleBoxClick("Values & Dispositions")}
           >
             <div className="text-center">
@@ -419,11 +420,12 @@ const Slide6 = () => {
           </div>
         )}
         <div className="flex justify-end items-end p-4">
+          <BackButton />
           <button
             onClick={handleNextPage}
-            className="bg-gradient-to-r from-teal-500 to-teal-700 text-white py-3 px-6 rounded-full shadow-md hover:from-teal-600 hover:to-teal-800 transition-transform duration-300"
+            className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
           >
-            Next Page
+            Next
           </button>
         </div>
       </div>

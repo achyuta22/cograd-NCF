@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import approach1 from "../images/approach1.png"; // Adjust the path to your image
+import BackButton from "../components/Backbutton";
 
 const aims = [
   "Developing Critical Thinking Skills",
@@ -33,7 +34,7 @@ const Slide4 = () => {
 
   return (
     <div className="relative py-6 px-4 lg:px-8 bg-gradient-to-b from-teal-50 via-white to-teal-100 min-h-screen flex flex-col items-center">
-      <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
+      <div className="max-w-4xl mx-auto p-4 bg-gray-50 shadow-lg rounded-lg flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
         {/* Left Content */}
         <div className="w-full lg:w-2/3">
           <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-900">
@@ -82,16 +83,17 @@ const Slide4 = () => {
       </div>
 
       {/* Next Page Button */}
+      <BackButton />
       <button
         onClick={handleNextPage}
         disabled={selectedAims.length === 0}
-        className={`absolute bottom-6 right-6 px-6 py-3 rounded-full shadow-lg transition-transform duration-300 ${
-          selectedAims.length > 0
-            ? "bg-teal-600 text-white hover:bg-teal-700 cursor-pointer"
+        className={` fixed bottom-4 right-8  p-5 rounded-3xl shadow-lg transition-transform hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300  transform hover:scale-105 duration-300 ${
+          selectedAims.length === 1
+            ? "bg-gradient-to-br from-teal-400 to-teal-600 text-white hover:bg-teal-700"
             : "bg-gray-400 text-gray-700 cursor-not-allowed"
         }`}
       >
-        Next Page
+        Next
       </button>
     </div>
   );
