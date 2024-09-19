@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/Backbutton";
 
 const Assess2 = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Assess2 = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-300 py-10">
+    <div className="min-h-screen bg-gray-50 py-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading Section */}
         <div className="text-center mb-8">
@@ -30,7 +31,7 @@ const Assess2 = () => {
           {boxItems.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg border border-gray-200 cursor-pointer transition-transform transform hover:scale-105 hover:bg-teal-100 hover:border-teal-400"
+              className="bg-white border border-teal-600 p-6 rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105 hover:bg-teal-100 hover:border-teal-400"
               onClick={() => navigate(item.route)}
             >
               <h3 className="text-xl font-semibold text-teal-800 mb-2 text-center">
@@ -45,9 +46,10 @@ const Assess2 = () => {
           ))}
         </div>
       </div>
+      <BackButton />
       <button
         onClick={handleNextChapter}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
         Next Chapter
       </button>

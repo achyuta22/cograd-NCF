@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import app4 from "../images/app4.png";
 import app6 from "../images/app6.png";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/Backbutton";
 
 const Assess1 = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Assess1 = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-indigo-100 to-indigo-300 py-10">
+    <div className="min-h-screen bg-gray-50 py-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading Section */}
         <div className="text-center mb-8">
@@ -29,7 +30,7 @@ const Assess1 = () => {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* Key Principles Box */}
           <div
-            className={`relative bg-white p-4 sm:p-6 rounded-lg shadow-xl transition-transform transform ${
+            className={`relative bg-white border border-teal-600 p-4 sm:p-6 rounded-lg shadow-xl transition-transform transform ${
               activeSection === "keyPrinciples" ? "bg-indigo-50 scale-105" : ""
             } cursor-pointer hover:shadow-2xl`}
             onClick={() => handleBoxClick("keyPrinciples")}
@@ -67,7 +68,7 @@ const Assess1 = () => {
 
           {/* Holistic Progress Card Box */}
           <div
-            className={`relative bg-white p-4 sm:p-6 rounded-lg shadow-xl transition-transform transform ${
+            className={`relative border border-teal-600 bg-white p-4 sm:p-6 rounded-lg shadow-xl transition-transform transform ${
               activeSection === "holisticProgressCard"
                 ? "bg-indigo-50 scale-105"
                 : ""
@@ -121,7 +122,7 @@ const Assess1 = () => {
 
           {/* Values and Dispositions Box */}
           <div
-            className={`relative bg-white p-4 sm:p-6 rounded-lg shadow-xl transition-transform transform ${
+            className={`relative border border-teal-600 bg-white p-4 sm:p-6 rounded-lg shadow-xl transition-transform transform ${
               activeSection === "valuesDispositions"
                 ? "bg-indigo-50 scale-105"
                 : ""
@@ -151,11 +152,12 @@ const Assess1 = () => {
       </div>
 
       {/* Next Page Button */}
+      <BackButton />
       <button
         onClick={handleNextPage}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-4 sm:p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
-        Next Page
+        Next
       </button>
     </div>
   );

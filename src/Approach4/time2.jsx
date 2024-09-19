@@ -6,6 +6,11 @@ const Time2 = () => {
   const handleNextSection = () => {
     navigate("/cct");
   };
+
+  const handleIndex = () => {
+    navigate("/history");
+  };
+
   const boxItems = [
     { title: "Foundational Stage", route: "/foundation-time" },
     { title: "Prepratory Stage", route: "/prepatory-time" },
@@ -14,14 +19,13 @@ const Time2 = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-300 py-10">
+    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-300 py-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading Section */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
             Stage Specific Time Allocation
           </h2>
-          <div className="border-t-4 border-teal-500 mx-auto w-16 mb-4"></div>
         </div>
 
         {/* Box Grid */}
@@ -45,8 +49,14 @@ const Time2 = () => {
         </div>
       </div>
       <button
+        onClick={handleIndex}
+        className="fixed bottom-4 z-10 left-8 bg-gradient-to-br from-red-400 to-red-400 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-red-500 active:scale-95 focus:ring-4 focus:ring-red-300"
+      >
+        Go to Index
+      </button>
+      <button
         onClick={handleNextSection}
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-500 to-teal-700 text-white p-4 sm:p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
       >
         Next Section
       </button>
