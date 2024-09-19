@@ -28,7 +28,7 @@ const QuizPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-teal-100 via-teal-200 to-teal-300 p-4 sm:p-8 flex flex-col items-center min-h-screen">
+    <div className="bg-gradient-to-br from-teal-100 via-teal-200 to-teal-300 p-4 sm:p-8 flex flex-col items-center">
       {/* Main content area */}
       <div className="flex-grow flex flex-col items-center w-full max-w-lg sm:max-w-2xl">
         <h1 className="text-2xl sm:text-4xl font-extrabold text-teal-800 mb-6 sm:mb-10 text-center">
@@ -55,21 +55,21 @@ const QuizPage = () => {
       </div>
 
       {/* Footer area with fixed buttons */}
-      <div className="w-full fixed bottom-0 py-4 sm:py-5 bg-white shadow-lg">
+      <div className="w-full fixed bottom-0 py-4 sm:py-5 bg-gray-50 shadow-lg">
         <div className="flex justify-between w-full max-w-lg sm:max-w-2xl mx-auto px-4">
           <button
             onClick={() => navigate("/table")}
-            className="flex-1 bg-teal-600 text-white py-2 sm:py-3 rounded-lg shadow-md hover:bg-teal-700 transition-transform transform hover:scale-105 flex items-center justify-center"
+            className="fixed bottom-8 left-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
           >
             <ReloadOutlined className="mr-2" />
             Revise
           </button>
           <button
             onClick={handleNextPage}
-            className="flex-1 bg-teal-600 text-white py-2 sm:py-3 rounded-lg shadow-md hover:bg-teal-700 transition-transform transform hover:scale-105 flex items-center justify-center ml-2 sm:ml-4"
+            className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
           >
             <ArrowRightOutlined className="mr-2" />
-            Next Page
+            Next
           </button>
         </div>
       </div>

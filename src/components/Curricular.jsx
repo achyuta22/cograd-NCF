@@ -3,6 +3,7 @@ import noncore2 from "../images/noncore2.jpg";
 import noncore3 from "../images/noncore3.jpg";
 import noncore from "../images/noncore.png";
 import { useNavigate } from "react-router-dom";
+import BackButton from "./Backbutton";
 
 const Curricular = () => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ const Curricular = () => {
     <section className="bg-gradient-to-b from-blue-50 to-teal-100 text-gray-900 py-8">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold text-teal-900 mb-4 text-center">
+        <h1 className="text-3xl md:text-5xl font-bold text-teal-900 mb-4 text-center">
           Curricular Areas
         </h1>
 
@@ -245,16 +246,17 @@ const Curricular = () => {
           <img
             src={noncore3}
             alt="Full Width Image 2"
-            className="w-full h-full object-cover rounded-lg shadow-lg"
+            className="w-full mb-6 h-full object-cover rounded-lg shadow-lg"
           />
         </div>
       </div>
 
       {/* Next Chapter Button */}
       <div className="flex justify-end items-end p-4">
+        <BackButton />
         <button
           onClick={handleNextChapter}
-          className="bg-gradient-to-r from-teal-500 to-teal-700 text-white py-3 px-6 rounded-full shadow-md hover:from-teal-600 hover:to-teal-800 transition-transform duration-300"
+          className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
         >
           Next Chapter
         </button>

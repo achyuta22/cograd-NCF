@@ -127,7 +127,7 @@ const Historytable = () => {
 
       {/* Next Page Button */}
       <button
-        className="fixed bottom-5 right-5 lg:bottom-6 lg:right-6 bg-teal-600 text-white py-2 px-6 rounded-full shadow-lg hover:bg-teal-700 transition-transform transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
         onClick={handleNextPage}
       >
         Next Page
