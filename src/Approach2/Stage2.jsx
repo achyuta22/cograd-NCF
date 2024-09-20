@@ -16,11 +16,11 @@ const Stage2 = () => {
 
   return (
     <div className="flex flex-col min-h-screen justify-between p-4 bg-gray-50 ">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mt-4 text-teal-700 drop-shadow-lg">
+      <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 text-teal-700 drop-shadow-lg">
         Child Development
       </h2>
 
-      <p className="text-base md:text-lg mb-20 text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
+      <p className="text-base md:text-lg mb-12 text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
         Child development is influenced by the interplay of three different
         processes, namely, biological processes, cognitive processes, and
         socio-emotional processes. These processes are intricately interwoven

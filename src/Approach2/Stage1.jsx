@@ -15,8 +15,8 @@ const Stage1 = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-gray-50 p-4">
-      <h1 className="text-3xl md:text-5xl font-extrabold text-center text-teal-800 mt-6 mb-6">
+    <div className="min-h-screen flex flex-col justify-between bg-gray-50 py-6 p-4">
+      <h1 className="text-2xl md:text-4xl font-extrabold text-center text-teal-800">
         School Stages
       </h1>
 

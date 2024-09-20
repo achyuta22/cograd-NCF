@@ -9,9 +9,9 @@ const Stages5 = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <div className="overflow-x-auto">
-        <h1 className="text-3xl font-bold text-teal-900 text-center mb-6">
+    <div className="p-4 bg-gray-100 min-h-screen">
+      <div className="overflow-x-auto  mb-16">
+        <h1 className="text-2xl font-bold text-teal-900 text-center mb-4">
           Stages Design
         </h1>
         <table className="min-w-full bg-white border border-teal-800 shadow-md rounded-lg">

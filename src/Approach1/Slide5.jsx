@@ -13,13 +13,13 @@ const Slide5 = () => {
   return (
     <div className="bg-gradient-to-b from-teal-50 via-white to-teal-100 min-h-screen flex flex-col py-6 px-4 lg:px-8">
       <div className="max-w-5xl mx-auto flex-grow">
-        <div className="grid gap-8 p-4 lg:grid-cols-12 items-center">
+        <div className="grid gap-6 lg:grid-cols-12 items-center">
           <div className="lg:col-span-7">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-teal-900">
+            <h2 className="text-2xl lg:text-4xl text-center font-bold mb-4 lg:mb-6 text-teal-900">
               Aims of School Education
             </h2>
             <ul className="list-disc list-inside mb-4 text-gray-800 text-base lg:text-lg leading-relaxed space-y-3">
-              <li>Rational Thought and Independent Thinking/Autonomy</li>
+              <li>Rational Thought and Independent Thinking</li>
               <li>Health and Well-being</li>
               <li>Democratic and Community Participation</li>
               <li>Economic Participation</li>

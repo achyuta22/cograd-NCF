@@ -25,10 +25,10 @@ const Stage3 = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b min-h-screen from-gray-50 via-gray-100 to-gray-200 py-2 px-4 md:px-8">
+    <div className="bg-gradient-to-b py-6 min-h-screen from-gray-50 via-gray-100 to-gray-200 px-4 md:px-8">
       {/* New Heading and Square Boxes */}
-      <div className="my-4 px-4 md:px-8">
-        <h2 className="text-3xl font-semibold text-center text-teal-800 mb-12">
+      <div className="px-4 md:px-8">
+        <h2 className="text-2xl font-semibold text-center text-teal-800 mb-6">
           Developmental Milestones
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

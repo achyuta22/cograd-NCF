@@ -10,10 +10,10 @@ const Stage4 = () => {
   };
   return (
     <div>
-      <div className="bg-white p-8  flex flex-col md:flex-row items-center">
+      <div className="bg-white p-4 py-4  flex flex-col md:flex-row items-center">
         {/* Text Section */}
-        <div className="md:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-3xl font-semibold text-teal-700 mb-8 text-center md:text-left">
+        <div className="md:w-1/2 mb-6 md:mb-0">
+          <h2 className="text-2xl font-semibold text-teal-700 mb-6 text-center md:text-left">
             Panchkosha Vikas
           </h2>
           <ul className="text-lg text-gray-700 list-disc list-inside space-y-4">
