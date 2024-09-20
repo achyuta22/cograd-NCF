@@ -4,11 +4,11 @@ import NcfeImage from "../images/mcf-image.png";
 
 const Hero = () => {
   return (
-    <section className="bg-blue-500 text-white py-4">
+    <section className="bg-blue-500 text-white py-4  min-h-screen">
       <div className="container mx-auto px-4 lg:px-8 max-w-screen-xl">
-        <div className="grid lg:grid-cols-12 gap-8 items-center">
+        <div className="grid lg:grid-cols-12 items-center">
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4 md:mb-8">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4 md:mb-8">
               National Curriculum Framework 2023
             </h1>
             <p className="text-gray-200 mb-8 text-base md:text-lg lg:text-xl">
@@ -16,10 +16,10 @@ const Hero = () => {
               learning with life skills, emotional well-being, and core values
               such as empathy, ethics, and teamwork.
             </p>
-            <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 mb-3">
+            <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 ">
               <Link
                 to="/user"
-                className="inline-flex items-center border border-white justify-center px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-900 transition-colors duration-300 transform hover:scale-105"
+                className="inline-flex items-center border border-white justify-center mb-8 px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-900 transition-colors duration-300 transform hover:scale-105"
               >
                 Get Started
                 <svg

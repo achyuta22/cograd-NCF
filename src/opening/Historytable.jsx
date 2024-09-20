@@ -9,9 +9,9 @@ const Historytable = () => {
   };
 
   return (
-    <div className="p-4 max-w-4xl mx-auto">
-      <section className="mt-6">
-        <h2 className="text-xl font-bold text-teal-700 mb-12 text-center md:text-2xl">
+    <div className="p-3 max-w-4xl mx-auto">
+      <section className="">
+        <h2 className="text-xl font-bold text-teal-700 mb-8 text-center md:text-2xl">
           National Curriculum Framework Highlights
         </h2>
         <div className="overflow-x-auto rounded-lg shadow-lg">
@@ -127,10 +127,10 @@ const Historytable = () => {
 
       {/* Next Page Button */}
       <button
-        className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+        className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
         onClick={handleNextPage}
       >
-        Next Page
+        Next 
       </button>
     </div>
   );

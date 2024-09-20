@@ -28,10 +28,10 @@ const QuizPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-teal-100 via-teal-200 to-teal-300 p-4 sm:p-8 flex flex-col items-center">
+    <div className="bg-gradient-to-br  from-teal-100 via-teal-200 to-teal-300 p-4 sm:p-8 flex flex-col items-center">
       {/* Main content area */}
       <div className="flex-grow flex flex-col items-center w-full max-w-lg sm:max-w-2xl">
-        <h1 className="text-2xl sm:text-4xl font-extrabold text-teal-800 mb-6 sm:mb-10 text-center">
+        <h1 className="text-2xl sm:text-3xl font-bold text-teal-800 mb-4 sm:mb-10 text-center">
           Select NCF Formation Years in India
         </h1>
 
@@ -40,7 +40,7 @@ const QuizPage = () => {
             <button
               key={option.id}
               onClick={() => handleClick(option.id)}
-              className={`p-4 sm:p-5 rounded-lg border-2 shadow-lg transition-all duration-300 transform hover:shadow-2xl hover:scale-105 ${
+              className={`p-3 sm:p-5 rounded-lg border-2 shadow-lg transition-all duration-300 transform hover:shadow-2xl hover:scale-105 ${
                 selected.includes(option.id)
                   ? option.isCorrect
                     ? "bg-teal-500 border-teal-700 text-white"
@@ -59,14 +59,14 @@ const QuizPage = () => {
         <div className="flex justify-between w-full max-w-lg sm:max-w-2xl mx-auto px-4">
           <button
             onClick={() => navigate("/table")}
-            className="fixed bottom-8 left-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+            className="fixed bottom-4 left-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
           >
             <ReloadOutlined className="mr-2" />
             Revise
           </button>
           <button
             onClick={handleNextPage}
-            className="fixed bottom-8 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
+            className="fixed bottom-4 right-8 bg-gradient-to-br from-teal-400 to-teal-600 text-white p-5 rounded-3xl shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 active:scale-95 focus:ring-4 focus:ring-teal-300"
           >
             <ArrowRightOutlined className="mr-2" />
             Next
