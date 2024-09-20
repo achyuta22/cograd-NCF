@@ -33,11 +33,11 @@ const Slide4 = () => {
   };
 
   return (
-    <div className="relative py-6 px-4 lg:px-8 bg-gradient-to-b from-teal-50 via-white to-teal-100 min-h-screen flex flex-col items-center">
-      <div className="max-w-4xl mx-auto p-4 bg-gray-50 shadow-lg rounded-lg flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
+    <div className="relative p-6 lg:px-8 bg-gradient-to-b from-teal-50 via-white to-teal-100 min-h-screen flex flex-col items-center">
+      <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
         {/* Left Content */}
         <div className="w-full lg:w-2/3">
-          <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-900">
+          <h1 className="text-xl lg:text-3xl font-bold mb-4 text-gray-900">
             What are the true aims of school education?
           </h1>
           <ul className="space-y-4">

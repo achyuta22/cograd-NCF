@@ -11,11 +11,11 @@ const Slide1 = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 py-12 px-6">
+    <div className="relative min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 py-6 px-6">
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left lg:justify-between">
         {/* Text Section */}
         <div className="lg:w-1/2 mb-12 lg:mb-0">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">
+          <h1 className="text-2xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-8 leading-tight tracking-tight">
             Our Approach
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
@@ -31,7 +31,7 @@ const Slide1 = () => {
           <img
             src={approach1}
             alt="Approach"
-            className="w-full max-w-xs sm:max-w-md md:max-w-lg h-auto rounded-lg shadow-2xl transform transition-transform duration-300 hover:scale-105"
+            className="w-full max-w-xs sm:max-w-md md:max-w-lg h-auto rounded-lg shadow-2xl "
           />
         </div>
       </div>

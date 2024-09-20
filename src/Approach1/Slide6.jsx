@@ -333,11 +333,11 @@ const Slide6 = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-900 py-8 lg:py-16 min-h-screen flex flex-col">
+    <section className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-900 py-6 lg:py-12 min-h-screen flex flex-col">
       <div className="container mx-auto px-6 lg:px-8 flex-1 flex flex-col justify-between">
         {/* Introduction */}
         <div className="text-center mb-8 lg:mb-12">
-          <p className="text-gray-800 text-lg lg:text-xl leading-relaxed mx-auto max-w-3xl">
+          <p className="text-gray-800 text-md lg:text-xl leading-relaxed mx-auto max-w-3xl">
             The five Aims of Education, as articulated in the previous section,
             would be achieved by schools by developing relevant and appropriate
             knowledge, capacities, values, and dispositions in their students.
@@ -347,11 +347,11 @@ const Slide6 = () => {
         {/* Three Square Boxes Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-1">
           <div
-            className="bg-gradient-to-r h-40 from-blue-400 to-blue-600 p-2 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105"
+            className="bg-gradient-to-r h-36 from-blue-400 to-blue-600 p-2 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105"
             onClick={() => handleBoxClick("Knowledge")}
           >
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-blue-800 mb-3">
+              <h3 className="text-xl font-bold text-blue-800 mb-3">
                 Knowledge
               </h3>
               <p className="text-gray-600">
@@ -363,11 +363,11 @@ const Slide6 = () => {
             </p>
           </div>
           <div
-            className="bg-gradient-to-r h-40 from-green-400 to-green-600 p-2 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105"
+            className="bg-gradient-to-r h-36 from-green-400 to-green-600 p-2 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105"
             onClick={() => handleBoxClick("Capacities")}
           >
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-green-800 mb-3">
+              <h3 className="text-xl font-bold text-green-800 mb-3">
                 Capacities
               </h3>
               <p className="text-gray-600">
@@ -379,11 +379,11 @@ const Slide6 = () => {
             </p>
           </div>
           <div
-            className="bg-gradient-to-r from-yellow-400 to-yellow-600 p-2 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105 h-40" // Added height constraint
+            className="bg-gradient-to-r from-yellow-400 to-yellow-600 p-2 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105 h-36" // Added height constraint
             onClick={() => handleBoxClick("Values & Dispositions")}
           >
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-yellow-800 mb-3">
+              <h3 className="text-xl font-bold text-yellow-800 mb-3">
                 Values & Dispositions
               </h3>
               <p className="text-gray-600">

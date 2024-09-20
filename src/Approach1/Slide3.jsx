@@ -8,9 +8,9 @@ const Slide3 = () => {
 
   return (
     <div className="relative py-6 px-6 lg:px-12 bg-gradient-to-b from-blue-50 via-white to-blue-200 min-h-screen flex flex-col items-center">
-      <div className="grid lg:grid-cols-12 gap-8  items-center">
+      <div className="grid lg:grid-cols-12 gap-6  items-center">
         <div className="lg:col-span-7">
-          <h2 className="text-3xl lg:text-4xl font-semibold mb-6 text-blue-800 leading-tight text-center lg:text-left">
+          <h2 className="text-2xl lg:text-4xl font-semibold mb-6 text-blue-800 leading-tight text-center lg:text-left">
             Vision of Education
           </h2>
           <p className="mb-4 text-gray-800 text-base lg:text-lg leading-relaxed text-center lg:text-left">
@@ -27,11 +27,11 @@ const Slide3 = () => {
             India a global knowledge superpower.
           </p>
         </div>
-        <div className="lg:col-span-5 flex justify-center lg:justify-end mt-6 mb-8 lg:mb-0">
+        <div className="lg:col-span-5 flex justify-center lg:justify-end mb-8 lg:mb-0">
           <img
             src={vision}
             alt="Vision"
-            className="w-full h-auto max-w-xs lg:max-w-sm rounded-lg shadow-xl transform transition-transform duration-300 hover:scale-105"
+            className="w-full h-auto max-w-xs lg:max-w-sm rounded-lg shadow-xl 5"
           />
         </div>
       </div>
