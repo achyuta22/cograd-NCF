@@ -22,10 +22,10 @@ const Curricular = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-teal-100 text-gray-900 py-8">
+    <section className="bg-gradient-to-b from-blue-50 to-teal-100 text-gray-900 py-6">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         {/* Heading */}
-        <h1 className="text-3xl md:text-5xl font-bold text-teal-900 mb-4 text-center">
+        <h1 className="text-2xl md:text-5xl font-bold text-teal-900 mb-4 text-center">
           Curricular Areas
         </h1>
 
@@ -246,7 +246,7 @@ const Curricular = () => {
           <img
             src={noncore3}
             alt="Full Width Image 2"
-            className="w-full mb-6 h-full object-cover rounded-lg shadow-lg"
+            className="w-full mb-8 h-full object-cover rounded-lg shadow-lg"
           />
         </div>
       </div>

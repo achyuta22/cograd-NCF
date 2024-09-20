@@ -122,7 +122,7 @@ const Learning1 = () => {
   };
   return (
     <div className="p-8 bg-gray-50 to-gray-300 min-h-screen">
-      <h1 className="text-4xl font-extrabold text-center mb-24 text-teal-900">
+      <h1 className="text-2xl font-extrabold text-center mb-6 text-teal-900">
         Approach to Learning Standards
       </h1>
 

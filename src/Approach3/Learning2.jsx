@@ -332,14 +332,14 @@ const Learning2 = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-50 min-h-screen">
+    <div className="p-4 mb-6 bg-gray-50 min-h-screen">
       {/* New Heading */}
-      <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-10 text-green-800">
+      <h2 className="text-2xl sm:text-4xl font-extrabold text-center mb-4 text-green-800">
         Approach to Pedagogy
       </h2>
 
       {/* New Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mb-12 px-2">
         {/* Box Template */}
         {[
           "How does a teacher help in attaining the aims of education?",

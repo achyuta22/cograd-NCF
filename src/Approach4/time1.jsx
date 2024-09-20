@@ -18,11 +18,11 @@ const Time1 = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10">
+    <div className="min-h-screen bg-gray-50 py-4">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading Section */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-gray-900 mb-2">
             Allocation of Time{" "}
           </h2>
           <div className="border-t-4 border-teal-600 mx-auto w-16 sm:w-24"></div>

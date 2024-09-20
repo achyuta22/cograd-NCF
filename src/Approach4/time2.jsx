@@ -19,11 +19,11 @@ const Time2 = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-300 py-6">
+    <div className="min-h-screen bg-gray-50 py-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading Section */}
-        <div className="text-center mb-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
+        <div className="text-center mb-4">
+          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">
             Stage Specific Time Allocation
           </h2>
         </div>
